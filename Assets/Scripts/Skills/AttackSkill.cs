@@ -40,8 +40,8 @@ public class AttackSkill : BaseSkill
         yield return GameManager.Instance.StartCoroutine(PerformAttackVisuals(target));
 
         target.TakeDamage(5);
-
         GameManager.Instance.SetPlayerInput(true);
+        GameManager.Instance.RegisterActionUse();
     }
     private IEnumerator PerformAttackVisuals(CardInstance target)
     {

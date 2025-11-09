@@ -8,6 +8,11 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
+    [Header("Game State")]
+    public bool playerTurn = true;
+    public int actionsThisTurn = 0;
+    public int maxActionsPerTurn = 3;
+
     [Header("References")]
     [SerializeField] private HeroInstance heroPrefab;
     [SerializeField] private ElementalDeck playerDeck;
@@ -35,13 +40,13 @@ public class GameManager : MonoBehaviour
 
     public bool PlayerInputEnabled => playerInput.InputEnabled;
 
-    private enum GamePhase { None, GameStart, PlayerTurn, EnemyTurn }
     private int currentTurn = 0;
     private HeroInstance selectedHero;
     public List<HeroInstance> PlayerHeroes { get; private set; } = new();
     public CardInstance SelectedTarget;
     private List<ElementalCardInstance> selectedCards = new List<ElementalCardInstance>();
     private BaseSkill matchedSkill = null;
+    private bool waveActive = false;
 
     void Awake()
     {
@@ -56,7 +61,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         StartCoroutine(GameStartRoutine());
-        //StartCoroutine(GameLoop());
+        StartCoroutine(WaveMonitorRoutine());
     }
     private IEnumerator GameStartRoutine()
     {
@@ -76,59 +81,39 @@ public class GameManager : MonoBehaviour
 
         StartCoroutine(PlayerTurnRoutine());
     }
+    private IEnumerator WaveMonitorRoutine()
+    {
+        while (true)
+        {
+            yield return new WaitUntil(() => enemyField.GetCards().Count == 0 && waveActive);
 
-    // Called when player plays element cards
+            waveActive = false;
+            Debug.Log("Wave cleared!");
+
+            // TODO: Intermission phase (player upgrades, shop, etc.)
+            // yield return StartCoroutine(IntermissionRoutine());
+            // For now, we go straight to the next wave
+
+            yield return new WaitForSeconds(1f);
+
+            Debug.Log("Spawning next wave...");
+            yield return enemySpawner.SpawnWaveCoroutine();
+            waveActive = true;
+
+            // Return control to the player
+            StartCoroutine(PlayerTurnRoutine());    
+        }
+    }
+
     public void AddElementToCombo(ElementType element)
     {
         selectedElements.Add(element);
         Debug.Log($"Element {element} added. Current combo: {string.Join(", ", selectedElements)}");
     }
-
-    // Called when player clicks on their hero to choose caster
-    public void SelectCaster(HeroInstance hero)
-    {
-        selectedHero = hero;
-        //Debug.Log($"Selected caster: {hero.cardData.cardName}");
-    }
-
-    // Called when player clicks on target (enemy or ally)
     public void SelectTarget(CardInstance target)
     {
         SelectedTarget = target;
-        //Debug.Log($"Selected target: {target.cardData.cardName}");
     }
-
-    //// Called when player confirms the spell
-    //public void ConfirmSkill()
-    //{
-    //    if (selectedHero == null || selectedTarget == null)
-    //    {
-    //        Debug.LogWarning("Cannot cast skill — missing caster or target!");
-    //        return;
-    //    }
-
-    //    BaseSkill skill = FindMatchingSkill(selectedElements);
-    //    if (skill == null)
-    //    {
-    //        Debug.Log("No spell matches this element combination!");
-    //        selectedElements.Clear();
-    //        return;
-    //    }
-
-    //    Debug.Log($"Casting {skill.skillName} using {string.Join(", ", selectedElements)} elements!");
-    //    StartCoroutine(skill.Execute(selectedHero, selectedTarget));
-    //    selectedElements.Clear();
-    //}
-
-    //private BaseSkill FindMatchingSkill(List<ElementType> elements)
-    //{
-    //    foreach (var s in allSkills)
-    //    {
-    //        if (s.Matches(elements))
-    //            return s;
-    //    }
-    //    return null;
-    //}
 
     public void SelectHero(HeroInstance hero)
     {
@@ -139,33 +124,13 @@ public class GameManager : MonoBehaviour
         return selectedHero;
     }
 
-    private IEnumerator GameLoop()
-    {
-        playerInput.SetInputEnabled(false);
-
-        // Start enemy wave
-        yield return StartCoroutine(enemySpawner.SpawnWaveCoroutine());
-
-        // Player draws 5 cards
-        for (int i = 0; i < 5; i++)
-        {
-            playerDeck.DrawCard();
-            yield return new WaitForSeconds(0.2f);
-        }
-
-        StartCoroutine(PlayerTurnRoutine());
-    }
-
     private IEnumerator PlayerTurnRoutine()
     {
         currentTurn++;
-        Debug.Log($"--- Player Turn {currentTurn} ---");
 
+        actionsThisTurn = 0;
         ResetAllAttacks();
-        if (currentTurn > 1)
-        {
-            playerDeck.DrawCard();
-        }
+        playerDeck.DrawUntilHandIsFull();
 
         SetPlayerInput(true);
         yield return new WaitUntil(() => playerInput.EndTurnPressed);
@@ -174,7 +139,6 @@ public class GameManager : MonoBehaviour
         SetPlayerInput(false);
         StartCoroutine(EnemyTurnRoutine());
     }
-
     private IEnumerator EnemyTurnRoutine()
     {
         Debug.Log("--- Enemy Turn ---");
@@ -194,6 +158,22 @@ public class GameManager : MonoBehaviour
 
         yield return new WaitForSeconds(enemyTurnDuration);
         StartCoroutine(PlayerTurnRoutine());
+    }
+    public void RegisterActionUse()
+    {
+        actionsThisTurn++;
+
+        if (actionsThisTurn >= maxActionsPerTurn)
+        {
+            StartCoroutine(EndTurnAfterDelay());
+        }
+    }
+    private IEnumerator EndTurnAfterDelay()
+    {
+        // Wait a bit to let final skill visuals complete
+        yield return new WaitForSeconds(1f);
+        playerInput.EndTurnPressed = true;
+        Debug.Log("simulate pressing end turn!");
     }
 
     private void ResetAllAttacks()

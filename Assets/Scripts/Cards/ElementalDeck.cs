@@ -44,4 +44,14 @@ public class ElementalDeck : MonoBehaviour
         for (int i = 0; i < count; i++)
             DrawCard();
     }
+
+    internal void DrawUntilHandIsFull()
+    {
+        int cardsNeeded = 5 - playerHand.GetCards().Count;
+        if (cardsNeeded > 0)
+        {
+            for (int i = 0; i < cardsNeeded; i++)
+                DrawCard();
+        }
+    }
 }

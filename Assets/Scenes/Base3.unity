@@ -329,8 +329,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 418a8fc5e89c5ce4fb5957d68da21564, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerTurn: 1
+  actionsThisTurn: 0
+  maxActionsPerTurn: 3
   heroPrefab: {fileID: 7403856116639826396, guid: 44044dba6aaef0447950080e5a1237e4, type: 3}
-  playerDeck: {fileID: 0}
+  playerDeck: {fileID: 1029937652}
   playerHand: {fileID: 0}
   playerField: {fileID: 941959983}
   enemyField: {fileID: 960329713}
