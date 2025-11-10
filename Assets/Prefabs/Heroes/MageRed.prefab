@@ -617,9 +617,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d234e6578b8b3e84c85b94603fa780d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseCard: {fileID: 0}
-  currentAttack: 8
-  currentHealth: 5
+  currentAttack: 10
+  currentHealth: 25
   state: 1
   attackText: {fileID: 6513506504482716756}
   healthText: {fileID: 1140594244276213103}
@@ -742,10 +741,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f984bcfb3ac8764e945ae2421d0f0b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FireResistance: 20
-  WaterResistance: 20
-  NatureResistance: 20
-  WindResistance: 20
+  FireResistance: 0
+  WaterResistance: 0
+  NatureResistance: 0
+  WindResistance: 0
   PhysicalResistance: 0
 --- !u!1 &8612068103122048513
 GameObject:

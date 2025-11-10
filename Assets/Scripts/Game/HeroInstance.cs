@@ -118,7 +118,7 @@ public class HeroInstance : CardInstance
         }
         else
         {
-            target.TakeDamage(currentAttack);
+            target.TakeDamage(currentAttack, ElementType.Physical);
             //Debug.Log($"{cardData.cardName} casted spell on enemy {target.cardData.cardName}, dealing {currentAttack} damage!");
         }
 

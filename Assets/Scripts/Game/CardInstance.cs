@@ -9,7 +9,7 @@ public class CardInstance : MonoBehaviour
 {
 
     [Header("Card Data")]
-    public Card baseCard;
+    //public Card baseCard;
     public int currentAttack;
     public int currentHealth;
     public CardState state;
@@ -28,10 +28,11 @@ public class CardInstance : MonoBehaviour
 
     private bool isSelected = false;
     private Vector3 originalPosition;
+    private CharacterResistances resistances;
     protected static CardInstance selectedAttacker;
     private void Awake()
     {
-
+        resistances = GetComponent<CharacterResistances>();
     }
     void Start()
     {
@@ -39,12 +40,12 @@ public class CardInstance : MonoBehaviour
     }
     public virtual void Initialize()
     {
-        if (baseCard != null)
-        {
-            currentAttack = baseCard.attack;
-            currentHealth = baseCard.health;
-            UpdateVisuals();
-        }
+        //if (baseCard != null)
+        //{
+        //    currentAttack = baseCard.attack;
+        //    currentHealth = baseCard.health;
+        //}
+        UpdateVisuals();
 
         if (highlightSprite != null)
             highlightSprite.enabled = false;
@@ -52,7 +53,7 @@ public class CardInstance : MonoBehaviour
 
     public void SetCardData(Card cardData)
     {
-        baseCard = cardData;
+        //baseCard = cardData;
         currentAttack = cardData.attack;
         currentHealth = cardData.health;
         UpdateVisuals();
@@ -161,18 +162,18 @@ public class CardInstance : MonoBehaviour
 
     private void ToggleSelection()
     {
-        if (highlightSprite != null)
-        {
-            if (isSelected)
-            {
-                highlightSprite.color = new Color(0f, 1f, 0f, 0.5f);
-                highlightSprite.enabled = true;
-            }
-            else
-            {
-                highlightSprite.enabled = false;
-            }
-        }
+        //if (highlightSprite != null)
+        //{
+        //    if (isSelected)
+        //    {
+        //        highlightSprite.color = new Color(0f, 1f, 0f, 0.5f);
+        //        highlightSprite.enabled = true;
+        //    }
+        //    else
+        //    {
+        //        highlightSprite.enabled = false;
+        //    }
+        //}
     }
     public virtual void SelectAsAttacker()
     {
@@ -215,7 +216,7 @@ public class CardInstance : MonoBehaviour
         yield return MoveToPosition(target.transform.position, 0.25f);
 
         // Deal damage
-        target.TakeDamage(currentAttack);
+        target.TakeDamage(currentAttack, ElementType.Physical);
 
         // Return (0.25s)
         yield return MoveToPosition(originalPosition, 0.25f);
@@ -223,9 +224,36 @@ public class CardInstance : MonoBehaviour
         GameManager.Instance.SetPlayerInput(true);
     }
 
-    public void TakeDamage(int dmg)
+    public void TakeDamage(int dmg, ElementType element)
     {
-        currentHealth -= dmg;
+        int finalDamage = dmg;
+        if (resistances != null)
+        {
+            float resistance = 0f;
+            switch (element)
+            {
+                case ElementType.Fire:
+                    resistance = resistances.FireResistance;
+                    break;
+                case ElementType.Water:
+                    resistance = resistances.WaterResistance;
+                    break;
+                case ElementType.Nature:
+                    resistance = resistances.NatureResistance;
+                    break;
+                case ElementType.Wind:
+                    resistance = resistances.WindResistance;
+                    break;
+                case ElementType.Physical:
+                    resistance = resistances.PhysicalResistance;
+                    break;
+            }
+
+            // Apply resistance (e.g., 50 = 50% reduction, -20 = +20% damage)
+            finalDamage = Mathf.RoundToInt(dmg * (1f - (resistance / 100f)));
+        }
+
+        currentHealth -= finalDamage;
         UpdateVisuals();
 
         if (currentHealth <= 0)

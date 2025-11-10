@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class AttackSkill : BaseSkill
 {
     [Header("Skill Projectile Prefabs")]
-    public GameObject formedProjectilePrefab; // The final merged projectile prefab
+    public GameObject formedProjectilePrefab; // The final projectile prefab
 
     [Header("Projectile Timing")]
     public float elementalRiseHeight = 2.0f;
@@ -14,6 +14,7 @@ public class AttackSkill : BaseSkill
     public float travelDuration = 0.4f;
     public float impactDelay = 0.1f;
     public int baseDamage = 5;
+    public ElementType damageType;
     public ElementIconLibrary elementsLib;
     public override void Execute()
     {
@@ -39,7 +40,7 @@ public class AttackSkill : BaseSkill
 
         yield return GameManager.Instance.StartCoroutine(PerformAttackVisuals(target));
 
-        target.TakeDamage(5);
+        target.TakeDamage(baseDamage, damageType);
         GameManager.Instance.SetPlayerInput(true);
         GameManager.Instance.RegisterActionUse();
     }

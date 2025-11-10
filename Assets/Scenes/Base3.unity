@@ -1648,11 +1648,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f8e9a0bb12f395408b4153fe540c928, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleCards:
-  - {fileID: 11400000, guid: 4e5ed93a04b8173409c8f79bb4e707ee, type: 2}
-  - {fileID: 11400000, guid: f29d807da97ad3346981b4efde7253ee, type: 2}
-  - {fileID: 11400000, guid: fba2420cfe179694ca07c702c156f1d1, type: 2}
-  - {fileID: 11400000, guid: 06d4670975eebd44c8f13ff92647488d, type: 2}
+  enemies:
+  - {fileID: 4211456961534145143, guid: 3a8e1d3c40086884480d3773c710e230, type: 3}
   enemyField: {fileID: 960329713}
   cardPrefab: {fileID: 6709276644064086281, guid: 8e4c7e8762720134ca8f85c82daded8e, type: 3}
   cardsPerWave: 2

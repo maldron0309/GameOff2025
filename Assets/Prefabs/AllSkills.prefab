@@ -54,6 +54,7 @@ MonoBehaviour:
   travelDuration: 0.4
   impactDelay: 0.1
   baseDamage: 5
+  damageType: 2
   elementsLib: {fileID: 11400000, guid: 6738d2d6b866057489065dcebbc16880, type: 2}
 --- !u!1 &3127187402080381879
 GameObject:
@@ -109,6 +110,7 @@ MonoBehaviour:
   travelDuration: 0.4
   impactDelay: 0.1
   baseDamage: 5
+  damageType: 0
   elementsLib: {fileID: 11400000, guid: 6738d2d6b866057489065dcebbc16880, type: 2}
 --- !u!1 &3875543213905387267
 GameObject:
@@ -199,6 +201,7 @@ MonoBehaviour:
   travelDuration: 0.4
   impactDelay: 0.1
   baseDamage: 5
+  damageType: 1
   elementsLib: {fileID: 11400000, guid: 6738d2d6b866057489065dcebbc16880, type: 2}
 --- !u!1 &8515794195755145526
 GameObject:
@@ -254,4 +257,5 @@ MonoBehaviour:
   travelDuration: 1
   impactDelay: 0.1
   baseDamage: 5
+  damageType: 4
   elementsLib: {fileID: 11400000, guid: 6738d2d6b866057489065dcebbc16880, type: 2}

@@ -78,6 +78,7 @@ public class GameManager : MonoBehaviour
 
         // Spawn enemy wave
         yield return enemySpawner.SpawnWaveCoroutine();
+        waveActive = true;
 
         StartCoroutine(PlayerTurnRoutine());
     }

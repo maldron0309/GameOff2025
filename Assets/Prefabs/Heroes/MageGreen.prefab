@@ -617,9 +617,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d234e6578b8b3e84c85b94603fa780d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseCard: {fileID: 0}
-  currentAttack: 5
-  currentHealth: 10
+  currentAttack: 10
+  currentHealth: 25
   state: 1
   attackText: {fileID: 6513506504482716756}
   healthText: {fileID: 1140594244276213103}

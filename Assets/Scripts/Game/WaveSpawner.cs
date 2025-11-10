@@ -5,11 +5,12 @@ using UnityEngine;
 public class WaveSpawner : MonoBehaviour
 {
     [Header("Wave Settings")]
-    [SerializeField] private List<Card> possibleCards;   // Cards the AI can use
-    [SerializeField] private TroopsField enemyField;     // The field where enemy cards appear
-    [SerializeField] private GameObject cardPrefab;      // The card prefab (same one as player)
-    [SerializeField] private int cardsPerWave = 2;       // Number of cards per wave
-    [SerializeField] private float spawnDelay = 0.5f;    // Delay between placing cards
+    //[SerializeField] private List<Card> possibleCards;
+    [SerializeField] private List<CardInstance> enemies;
+    [SerializeField] private TroopsField enemyField;
+    [SerializeField] private GameObject cardPrefab;
+    [SerializeField] private int cardsPerWave = 2;
+    [SerializeField] private float spawnDelay = 0.5f;
 
     private int currentWave = 0;
     private bool waveActive = false;
@@ -50,20 +51,14 @@ public class WaveSpawner : MonoBehaviour
 
     private void SpawnRandomEnemyCard()
     {
-        if (possibleCards == null || possibleCards.Count == 0 || enemyField == null)
-        {
-            Debug.LogWarning("WaveSpawner is missing setup references!");
-            return;
-        }
+        CardInstance randomEnemy = enemies[Random.Range(0, enemies.Count)];
 
-        Card randomCard = possibleCards[Random.Range(0, possibleCards.Count)];
-
-        GameObject newCardGO = Instantiate(cardPrefab, transform.position, Quaternion.identity);
+        GameObject newCardGO = Instantiate(randomEnemy, transform.position, Quaternion.identity).gameObject;
         CardInstance cardInstance = newCardGO.GetComponent<CardInstance>();
 
         if (cardInstance != null)
         {
-            cardInstance.SetCardData(randomCard);
+            //cardInstance.SetCardData(randomCard);
             cardInstance.ChangeState(CardState.OnField);
             cardInstance.currentContainer = enemyField;
             cardInstance.troopsField = enemyField;
