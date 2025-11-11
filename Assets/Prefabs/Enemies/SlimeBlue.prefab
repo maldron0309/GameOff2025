@@ -592,7 +592,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentAttack: 5
-  currentHealth: 10
+  currentHealth: 7
   state: 0
   attackText: {fileID: 6513506504482716756}
   healthText: {fileID: 1140594244276213103}

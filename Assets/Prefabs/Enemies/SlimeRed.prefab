@@ -592,7 +592,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentAttack: 5
-  currentHealth: 10
+  currentHealth: 7
   state: 0
   attackText: {fileID: 6513506504482716756}
   healthText: {fileID: 1140594244276213103}
@@ -612,9 +612,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f984bcfb3ac8764e945ae2421d0f0b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FireResistance: 50
-  WaterResistance: 0
-  NatureResistance: -50
+  FireResistance: 0
+  WaterResistance: -50
+  NatureResistance: 50
   WindResistance: 0
   PhysicalResistance: 50
 --- !u!61 &3303585355228617710
@@ -816,7 +816,7 @@ Animator:
   m_GameObject: {fileID: 8612068103122048513}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e2a59757cbdae9746bac845fc263c4bc, type: 2}
+  m_Controller: {fileID: 22100000, guid: 865d985db7df2b14a97dac046d382e41, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

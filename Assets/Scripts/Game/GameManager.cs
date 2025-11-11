@@ -35,8 +35,10 @@ public class GameManager : MonoBehaviour
 
     private List<ElementType> selectedElements = new List<ElementType>();
 
-    [Header("UI")]
-    public Button useButton;
+    [Header("Skill UI")]
+    public Transform skillCardParent;        // UI parent container for displaying skill cards
+    public GameObject skillCardPrefab;       // Prefab with SkillCardUI script
+    private List<GameObject> activeSkillCards = new List<GameObject>();
 
     public bool PlayerInputEnabled => playerInput.InputEnabled;
 
@@ -51,15 +53,11 @@ public class GameManager : MonoBehaviour
     void Awake()
     {
         Instance = this;
-        if (useButton != null)
-        {
-            useButton.onClick.AddListener(OnUseButtonPressed);
-            useButton.gameObject.SetActive(false);
-        }
     }
 
     void Start()
     {
+        allSkills = GetComponentsInChildren<BaseSkill>().ToList();
         StartCoroutine(GameStartRoutine());
         StartCoroutine(WaveMonitorRoutine());
     }
@@ -72,7 +70,7 @@ public class GameManager : MonoBehaviour
             hero.SetCardData(startingHeroes[i]);
             hero.troopsField = playerField;
             PlayerHeroes.Add(hero);
-            playerField.AddCardRepresentation(hero.gameObject);
+            playerField.AddCard(hero);
             yield return new WaitForSeconds(0.1f);
         }
 
@@ -257,51 +255,69 @@ public class GameManager : MonoBehaviour
 
     private void EvaluateCombo()
     {
-        matchedSkill = FindMatchingSkill(selectedElements);
+        matchedSkill = null;
 
-        if (useButton != null)
-            useButton.gameObject.SetActive(matchedSkill != null);
+        // Clear any previously shown skill cards
+        ClearSkillCards();
 
-        if (matchedSkill != null)
-            InfoPanel.instance.ShowMessage($"Found skill: {matchedSkill.skillName}");
+        List<BaseSkill> matchingSkills = FindMatchingSkills(selectedElements);
+
+        if (matchingSkills.Count > 0)
+        {
+            foreach (var skill in matchingSkills)
+            {
+                GameObject cardObj = Instantiate(skillCardPrefab, skillCardParent);
+                var cardUI = cardObj.GetComponent<SkillCardUI>();
+                cardUI.Initialize(skill);
+                activeSkillCards.Add(cardObj);
+            }
+
+            InfoPanel.instance.ShowMessage("Choose a skill!");
+        }
         else
-            InfoPanel.instance.ShowMessage($"No skill matches current combo!");
+        {
+            InfoPanel.instance.ShowMessage("No skill matches this combination.");
+        }
     }
-
-    private BaseSkill FindMatchingSkill(List<ElementType> combo)
+    private List<BaseSkill> FindMatchingSkills(List<ElementType> combo)
     {
+        List<BaseSkill> result = new List<BaseSkill>();
+
         foreach (var skill in allSkills)
         {
-            if(skill.Matches(combo))
-                return skill;
-
-            //if (skill.RequiredElements.Count == combo.Count &&
-            //    !skill.RequiredElements.Except(combo).Any())
-            //{
-            //    return skill;
-            //}
+            if (skill.requiredElements.Count == combo.Count &&
+                !skill.requiredElements.Except(combo).Any())
+            {
+                result.Add(skill);
+            }
         }
-        return null;
+
+        return result;
     }
 
-    private void OnUseButtonPressed()
+    public void OnSkillCardChosen(BaseSkill chosenSkill)
     {
-        if (matchedSkill == null)
-            return;
+        InfoPanel.instance.Hide();
 
-        Debug.Log($"Using skill: {matchedSkill.skillName}");
-
-        // Consume the cards
+        // Consume used cards
         foreach (var card in selectedCards.ToList())
             card.Consume();
 
         selectedElements.Clear();
         selectedCards.Clear();
 
-        if (useButton != null)
-            useButton.gameObject.SetActive(false);
+        ClearSkillCards();
 
-        // Execute the skill (will prompt for target if needed)
-        matchedSkill.Execute();
+        chosenSkill.Execute();
+    }
+
+    private void ClearSkillCards()
+    {
+        foreach (var card in activeSkillCards)
+        {
+            if (card != null)
+                Destroy(card);
+        }
+        activeSkillCards.Clear();
     }
 }

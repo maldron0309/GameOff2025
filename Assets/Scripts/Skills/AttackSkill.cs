@@ -16,6 +16,7 @@ public class AttackSkill : BaseSkill
     public int baseDamage = 5;
     public ElementType damageType;
     public ElementIconLibrary elementsLib;
+    public GameObject onHitEffect;
     public override void Execute()
     {
         GameManager.Instance.StartCoroutine(WaitForTargetAndAttack());
@@ -41,6 +42,10 @@ public class AttackSkill : BaseSkill
         yield return GameManager.Instance.StartCoroutine(PerformAttackVisuals(target));
 
         target.TakeDamage(baseDamage, damageType);
+
+        if(onHitEffect)
+            Instantiate(onHitEffect, target.transform.position, Quaternion.identity);
+
         GameManager.Instance.SetPlayerInput(true);
         GameManager.Instance.RegisterActionUse();
     }

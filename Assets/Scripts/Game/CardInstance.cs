@@ -224,25 +224,38 @@ public class CardInstance : MonoBehaviour
         GameManager.Instance.SetPlayerInput(true);
     }
 
-    public void TakeDamage(int dmg, ElementType element)
+    public void TakeDamage(int dmg, ElementType element, int accuracy = 100)
     {
+        if(accuracy < 100)
+        {
+            if(Random.Range(1, 100) > accuracy)
+            {
+                EffectsManager.instance.CreateFloatingText(transform.position, "Miss", Color.black);
+                return;
+            }
+        }
         int finalDamage = dmg;
         if (resistances != null)
         {
+            Color textColor = Color.black;
             float resistance = 0f;
             switch (element)
             {
                 case ElementType.Fire:
                     resistance = resistances.FireResistance;
+                    textColor = Color.red;
                     break;
                 case ElementType.Water:
                     resistance = resistances.WaterResistance;
+                    textColor = Color.cyan;
                     break;
                 case ElementType.Nature:
                     resistance = resistances.NatureResistance;
+                    textColor = Color.green;
                     break;
                 case ElementType.Wind:
                     resistance = resistances.WindResistance;
+                    textColor = Color.gray;
                     break;
                 case ElementType.Physical:
                     resistance = resistances.PhysicalResistance;
@@ -251,6 +264,7 @@ public class CardInstance : MonoBehaviour
 
             // Apply resistance (e.g., 50 = 50% reduction, -20 = +20% damage)
             finalDamage = Mathf.RoundToInt(dmg * (1f - (resistance / 100f)));
+            EffectsManager.instance.CreateFloatingText(transform.position, finalDamage.ToString() , textColor);
         }
 
         currentHealth -= finalDamage;

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: aeada8d48b9a7844a9ff0420987c568c
+guid: c3f182a0e456f6c4ab5c7ddc8a9187ef
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6423806749927177598
-    second: Earth_0
+      213: -7695294744069511148
+    second: zone1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Earth_0
+      name: zone1_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 21
-        width: 38
-        height: 39
+        x: 0
+        y: 0
+        width: 169
+        height: 169
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e7d7a2b4432f52950800000000000000
-      internalID: 6423806749927177598
+      spriteID: 4186ec1a332d43590800000000000000
+      internalID: -7695294744069511148
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Earth_0: 6423806749927177598
+      zone1_0: -7695294744069511148
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
