@@ -9,6 +9,7 @@ public abstract class BaseSkill : MonoBehaviour
     public string description;
     public Sprite skillIcon;
     public List<ElementType> requiredElements = new List<ElementType>();
+    protected Vector3 mergePoint; // some skill need this point
 
     public abstract void Execute();
 
@@ -58,6 +59,12 @@ public abstract class BaseSkill : MonoBehaviour
         }
 
         yield return new WaitForSeconds(launchDuration + mergeDelay);
+
+
+        mergePoint = Vector3.zero;
+        foreach (var p in elementalProjectiles)
+            mergePoint += p.transform.position;
+        mergePoint /= elementalProjectiles.Count;
 
         // cleanup visual projectiles
         foreach (var p in elementalProjectiles)

@@ -17,6 +17,10 @@ public class MassDamageSkill : BaseSkill
     [Header("Damage")]
     public int baseDamage = 8;
     public ElementType damageElement;
+    [Header("Status Effect")]
+    public StatusEffect statusEffect;
+    [Range(0, 100)]
+    public int chanceToProc = 0;
 
     public override void Execute()
     {
@@ -62,6 +66,20 @@ public class MassDamageSkill : BaseSkill
             }
 
             target.TakeDamage(baseDamage, damageElement);
+
+            if (statusEffect != null)
+            {
+                int roll = Random.Range(0, 100);
+                if (roll < chanceToProc)
+                {
+                    Debug.Log($"Applying {statusEffect.effectName} to {target.name} ({roll}% < {chanceToProc}%)");
+                    target.AddStatusEffect(statusEffect);
+                }
+                else
+                {
+                    Debug.Log($"Effect {statusEffect.effectName} did not proc ({roll}% >= {chanceToProc}%)");
+                }
+            }
 
             // Small stagger for visual pacing
             yield return new WaitForSeconds(0.1f);

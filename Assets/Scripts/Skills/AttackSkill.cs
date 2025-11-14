@@ -68,52 +68,13 @@ public class AttackSkill : BaseSkill
     }
     private IEnumerator PerformAttackVisuals(CardInstance target)
     {
-        List<HeroInstance> contributingHeroes = new List<HeroInstance>();
-        foreach (var hero in GameManager.Instance.PlayerHeroes)
-        {
-            if (requiredElements.Contains(hero.mainElement))
-                contributingHeroes.Add(hero);
-        }
-
-        if (contributingHeroes.Count == 0)
-        {
-            Debug.LogWarning("No heroes found for AttackSkill: " + skillName);
-            yield break;
-        }
-
-        List<GameObject> elementalProjectiles = new List<GameObject>();
-
-        foreach (var hero in contributingHeroes)
-        {
-            GameObject projectilePrefab = elementsLib.GetElementProjectilePrefab(hero.mainElement);
-
-            if (projectilePrefab == null)
-            {
-                Debug.LogWarning($"No projectile prefab found for element {hero.mainElement}");
-                continue;
-            }
-
-            GameObject proj = Instantiate(projectilePrefab, hero.transform.position, Quaternion.identity);
-            elementalProjectiles.Add(proj);
-
-            Vector3 riseTarget = hero.transform.position + Vector3.up * elementalRiseHeight;
-            StartCoroutine(MoveProjectile(proj, riseTarget, elementalLaunchDuration));
-        }
-
-        yield return new WaitForSeconds(elementalLaunchDuration + mergeDelay);
-
-        Vector3 mergePoint = Vector3.zero;
-        foreach (var p in elementalProjectiles)
-            mergePoint += p.transform.position;
-        mergePoint /= elementalProjectiles.Count;
+        yield return GameManager.Instance.StartCoroutine(
+            PerformElementalLaunches(elementsLib, requiredElements, elementalRiseHeight, elementalLaunchDuration, mergeDelay)
+        );
 
         if (formedProjectilePrefab != null)
         {
             GameObject formedProjectile = Instantiate(formedProjectilePrefab, mergePoint, Quaternion.identity);
-
-            // Clean up old projectiles (simulate merge)
-            foreach (var p in elementalProjectiles)
-                Destroy(p);
 
             yield return MoveProjectile(formedProjectile, target.transform.position, travelDuration);
 
@@ -126,18 +87,5 @@ public class AttackSkill : BaseSkill
         {
             Debug.LogError("Formed projectile prefab missing in AttackSkill!");
         }
-    }
-
-    private IEnumerator MoveProjectile(GameObject projectile, Vector3 targetPos, float duration)
-    {
-        Vector3 startPos = projectile.transform.position;
-        float elapsed = 0;
-        while (elapsed < duration)
-        {
-            elapsed += Time.deltaTime;
-            projectile.transform.position = Vector3.Lerp(startPos, targetPos, elapsed / duration);
-            yield return null;
-        }
-        projectile.transform.position = targetPos;
     }
 }

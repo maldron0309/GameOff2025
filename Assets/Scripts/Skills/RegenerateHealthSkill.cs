@@ -1,29 +1,30 @@
 using System.Collections;
 using UnityEngine;
 
-public class PoisonEffect : StatusEffect
+public class RegenerateHealthSkill : StatusEffect
 {
-    public int damagePerTurn = 3;
+    public int regenAmount = 5;
 
     public override void Initialize(CardInstance targetUnit, StatusEffect origin)
     {
         base.Initialize(targetUnit, origin);
-        PoisonEffect originEffect = (PoisonEffect)origin;
+        RegenerateHealthSkill originEffect = origin as RegenerateHealthSkill;
 
-        damagePerTurn = originEffect.damagePerTurn;
+        regenAmount = originEffect.regenAmount;
         target = targetUnit;
-        EffectsManager.instance.CreateFloatingText(target.transform.position, "Poisoned", Color.black);
+        EffectsManager.instance.CreateFloatingText(target.transform.position, "Regeneration", Color.black);
     }
     public override IEnumerator OnTurnStartCoroutine()
     {
         if (target == null)
             yield break;
 
-        target.TakeDamage(damagePerTurn, ElementType.Nature);
+        target.Heal(regenAmount);
 
         // add visual effect for posin here and wait a bit
         yield return new WaitForSeconds(0.3f);
 
+        // Handle duration countdown and expiration
         duration--;
         if (duration <= 0)
         {
@@ -33,10 +34,10 @@ public class PoisonEffect : StatusEffect
     }
     public override void Reapply(StatusEffect newEffect)
     {
-        duration = Mathf.Max(duration, newEffect.duration); 
-        
-        PoisonEffect newPoison = newEffect as PoisonEffect;
-        damagePerTurn = Mathf.Max(damagePerTurn, newPoison.damagePerTurn);
+        duration = Mathf.Max(duration, newEffect.duration);
+
+        RegenerateHealthSkill newPoison = newEffect as RegenerateHealthSkill;
+        regenAmount += newPoison.regenAmount;
     }
 
     protected override void OnExpire()

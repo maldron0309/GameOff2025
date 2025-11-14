@@ -592,7 +592,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentAttack: 5
-  maxHealth: 7
+  maxHealth: 15
   state: 0
   attackText: {fileID: 6513506504482716756}
   healthText: {fileID: 1140594244276213103}
@@ -600,6 +600,7 @@ MonoBehaviour:
   highlightSprite: {fileID: 9070761382798154575}
   troopsField: {fileID: 0}
   currentContainer: {fileID: 0}
+  activeEffects: []
 --- !u!114 &6227583397517256033
 MonoBehaviour:
   m_ObjectHideFlags: 0

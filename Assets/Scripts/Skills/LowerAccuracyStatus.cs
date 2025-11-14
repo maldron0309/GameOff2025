@@ -9,6 +9,7 @@ public class LowerAccuracyStatus : StatusEffect
         base.Initialize(targetUnit, origin);
         LowerAccuracyStatus originAccStatus = origin as LowerAccuracyStatus;
         accuracyPenalty = originAccStatus.accuracyPenalty;
+        EffectsManager.instance.CreateFloatingText(target.transform.position, "Accuracy down", Color.black);
     }
     public override IEnumerator OnTurnStartCoroutine()
     {

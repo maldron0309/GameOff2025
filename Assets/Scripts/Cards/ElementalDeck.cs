@@ -31,7 +31,7 @@ public class ElementalDeck : MonoBehaviour
             availableElements[Random.Range(0, availableElements.Count)];
 
         // Instantiate and add to hand
-        GameObject cardGO = Instantiate(elementalCardPrefab, playerHand.transform);
+        GameObject cardGO = Instantiate(elementalCardPrefab, transform.position, Quaternion.identity, playerHand.transform);
         ElementalCardInstance card = cardGO.GetComponent<ElementalCardInstance>();
         card.Initialize(element);
 

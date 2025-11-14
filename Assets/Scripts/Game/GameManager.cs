@@ -24,6 +24,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] private List<HeroCard> startingHeroes;
     public bool IsActionPending(string type) => pendingActionType == type;
 
+    public List<CardInstance> GetEnemies()
+    {
+        return enemyField.GetCards();
+    }
+
     public HeroActionMenu heroActionMenuPrefab;
     private string pendingActionType = null;
 

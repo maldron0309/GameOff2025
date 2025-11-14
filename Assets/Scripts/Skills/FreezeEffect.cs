@@ -6,6 +6,7 @@ public class FreezeEffect : StatusEffect
     public override void Initialize(CardInstance targetUnit, StatusEffect origin)
     {
         base.Initialize(targetUnit, origin);
+        EffectsManager.instance.CreateFloatingText(target.transform.position, "Frozen", Color.black);
     }
     public override IEnumerator OnTurnStartCoroutine()
     {

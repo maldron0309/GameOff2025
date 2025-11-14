@@ -618,7 +618,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentAttack: 10
-  maxHealth: 10
+  maxHealth: 25
   state: 1
   attackText: {fileID: 6513506504482716756}
   healthText: {fileID: 1140594244276213103}
@@ -626,6 +626,7 @@ MonoBehaviour:
   highlightSprite: {fileID: 9070761382798154575}
   troopsField: {fileID: 0}
   currentContainer: {fileID: 0}
+  activeEffects: []
   heroData: {fileID: 11400000, guid: ee8e3ba51ff30db47b7384e19a611fd7, type: 2}
   mainElement: 1
 --- !u!61 &3303585355228617710

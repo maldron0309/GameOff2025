@@ -12,6 +12,7 @@ public class BurnEffect : StatusEffect
 
         damagePerTurn = originEffect.damagePerTurn;
         target = targetUnit;
+        EffectsManager.instance.CreateFloatingText(target.transform.position, "Burning", Color.black);
     }
     public override IEnumerator OnTurnStartCoroutine()
     {

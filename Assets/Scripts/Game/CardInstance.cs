@@ -197,14 +197,14 @@ public class CardInstance : MonoBehaviour
         GameManager.Instance.SetPlayerInput(true);
     }
 
-    public void TakeDamage(int dmg, ElementType element, int accuracy = 100)
+    public int TakeDamage(int dmg, ElementType element, int accuracy = 100)
     {
         if(accuracy < 100)
         {
             if(Random.Range(1, 100) > accuracy)
             {
                 EffectsManager.instance.CreateFloatingText(transform.position, "Miss", Color.black);
-                return;
+                return 0;
             }
         }
         int finalDamage = dmg;
@@ -240,13 +240,16 @@ public class CardInstance : MonoBehaviour
             EffectsManager.instance.CreateFloatingText(transform.position, finalDamage.ToString() , textColor);
         }
 
+        int realDamageDone = Mathf.Min(finalDamage, currentHealth); // needed for life drain skill
         currentHealth -= finalDamage;
+        StartCoroutine(Shake(0.35f, 0.25f));
         UpdateVisuals();
 
         if (currentHealth <= 0)
         {
             StartCoroutine(HandleDestruction());
         }
+        return realDamageDone;
     }
     public void Heal(int amount)
     {
@@ -318,7 +321,30 @@ public class CardInstance : MonoBehaviour
                 yield return effect.OnTurnStartCoroutine();
         }
 
-        // Clean up any expired effects (destroyed components)
         activeEffects.RemoveAll(e => e == null);
+    }
+    public IEnumerator Shake(float duration = 0.25f, float magnitude = 0.1f)
+    {
+        Transform cam = Camera.main.transform;
+        Vector3 originalPos = transform.position;
+
+        float elapsed = 0f;
+
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+
+            // This vector is "left-right" relative to camera
+            Vector3 cameraRight = cam.right;
+
+            // Random offset left/right
+            float offset = Random.Range(-1f, 1f) * magnitude;
+
+            transform.position = originalPos + cameraRight * offset;
+
+            yield return null;
+        }
+
+        transform.position = originalPos;
     }
 }
