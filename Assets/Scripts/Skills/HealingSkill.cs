@@ -19,6 +19,11 @@ public class HealingSkill : BaseSkill
     {
         GameManager.Instance.StartCoroutine(WaitForTargetAndHeal());
     }
+    public override string UpdatedDescription()
+    {
+        HeroInstance hero = GameManager.Instance.GetHeroOfelement(ElementType.Nature);
+        return description.Replace("<damage>", Mathf.RoundToInt(baseHeal * (hero.spellPower / 100f)).ToString());
+    }
 
     private IEnumerator WaitForTargetAndHeal()
     {
@@ -70,7 +75,8 @@ public class HealingSkill : BaseSkill
         // Apply healing
         if (target != null)
         {
-            target.Heal(baseHeal);
+            HeroInstance hero = GameManager.Instance.GetHeroOfelement(ElementType.Nature);
+            target.Heal(Mathf.RoundToInt(baseHeal * (hero.spellPower / 100f)));
         }
 
         GameManager.Instance.SetPlayerInput(true);

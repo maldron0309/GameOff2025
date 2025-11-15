@@ -3,9 +3,9 @@ using UnityEngine;
 
 public class FreezeEffect : StatusEffect
 {
-    public override void Initialize(CardInstance targetUnit, StatusEffect origin)
+    public override void Initialize(CardInstance targetUnit, StatusEffect origin, int power)
     {
-        base.Initialize(targetUnit, origin);
+        base.Initialize(targetUnit, origin, power);
         EffectsManager.instance.CreateFloatingText(target.transform.position, "Frozen", Color.black);
     }
     public override IEnumerator OnTurnStartCoroutine()
@@ -19,7 +19,7 @@ public class FreezeEffect : StatusEffect
         }
         yield return null;
     }
-    public override void Reapply(StatusEffect newEffect)
+    public override void Reapply(StatusEffect newEffect, int power)
     {
         // do nothing freeze effects don't stack
     }

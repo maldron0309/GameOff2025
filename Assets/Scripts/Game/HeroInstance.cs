@@ -4,8 +4,8 @@ using System.Collections.Generic;
 
 public class HeroInstance : CardInstance
 {
-    public HeroCard heroData;
     public ElementType mainElement;
+    public int spellPower = 100;
     public override void Initialize()
     {
         base.Initialize();

@@ -25,6 +25,11 @@ public class AttackSkill : BaseSkill
     {
         GameManager.Instance.StartCoroutine(WaitForTargetAndAttack());
     }
+    public override string UpdatedDescription()
+    {
+        HeroInstance hero = GameManager.Instance.GetHeroOfelement(damageType);
+        return description.Replace("<damage>", Mathf.RoundToInt(baseDamage * (hero.spellPower / 100f)).ToString());
+    }
 
     private IEnumerator WaitForTargetAndAttack()
     {
@@ -45,14 +50,15 @@ public class AttackSkill : BaseSkill
 
         yield return GameManager.Instance.StartCoroutine(PerformAttackVisuals(target));
 
-        target.TakeDamage(baseDamage, damageType);
+        HeroInstance hero = GameManager.Instance.GetHeroOfelement(damageType);
+        target.TakeDamage(Mathf.RoundToInt(baseDamage * (hero.spellPower / 100f)), damageType);
         if (statusEffect != null)
         {
             int roll = Random.Range(0, 100);
             if (roll < chanceToProc)
             {
                 Debug.Log($"Applying {statusEffect.effectName} to {target.name} ({roll}% < {chanceToProc}%)");
-                target.AddStatusEffect(statusEffect);
+                target.AddStatusEffect(statusEffect, hero.spellPower);
             }
             else
             {

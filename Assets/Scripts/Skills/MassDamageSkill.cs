@@ -26,6 +26,11 @@ public class MassDamageSkill : BaseSkill
     {
         GameManager.Instance.StartCoroutine(PerformMassHeal());
     }
+    public override string UpdatedDescription()
+    {
+        HeroInstance hero = GameManager.Instance.GetHeroOfelement(damageElement);
+        return description.Replace("<damage>", Mathf.RoundToInt(baseDamage * (hero.spellPower / 100f)).ToString());
+    }
 
     private IEnumerator PerformMassHeal()
     {
@@ -65,7 +70,8 @@ public class MassDamageSkill : BaseSkill
                 GameObject.Destroy(healFx, damageEffectDuration);
             }
 
-            target.TakeDamage(baseDamage, damageElement);
+            HeroInstance hero = GameManager.Instance.GetHeroOfelement(damageElement);
+            target.TakeDamage(Mathf.RoundToInt(baseDamage * (hero.spellPower / 100f)), damageElement);
 
             if (statusEffect != null)
             {
@@ -73,7 +79,7 @@ public class MassDamageSkill : BaseSkill
                 if (roll < chanceToProc)
                 {
                     Debug.Log($"Applying {statusEffect.effectName} to {target.name} ({roll}% < {chanceToProc}%)");
-                    target.AddStatusEffect(statusEffect);
+                    target.AddStatusEffect(statusEffect, hero.spellPower);
                 }
                 else
                 {

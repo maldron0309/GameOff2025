@@ -5,12 +5,12 @@ public class BurnEffect : StatusEffect
 {
     public int damagePerTurn = 4;
 
-    public override void Initialize(CardInstance targetUnit, StatusEffect origin)
+    public override void Initialize(CardInstance targetUnit, StatusEffect origin, int power)
     {
-        base.Initialize(targetUnit, origin);
+        base.Initialize(targetUnit, origin, power);
         BurnEffect originEffect = (BurnEffect)origin;
 
-        damagePerTurn = originEffect.damagePerTurn;
+        damagePerTurn = Mathf.RoundToInt(originEffect.damagePerTurn * power * 0.01f);
         target = targetUnit;
         EffectsManager.instance.CreateFloatingText(target.transform.position, "Burning", Color.black);
     }
@@ -32,12 +32,12 @@ public class BurnEffect : StatusEffect
             Destroy(this);
         }
     }
-    public override void Reapply(StatusEffect newEffect)
+    public override void Reapply(StatusEffect newEffect, int power)
     {
         duration++;
 
         BurnEffect newPoison = newEffect as BurnEffect;
-        damagePerTurn += newPoison.damagePerTurn;
+        damagePerTurn += Mathf.RoundToInt(newPoison.damagePerTurn * power * 0.01f);
     }
 
     protected override void OnExpire()

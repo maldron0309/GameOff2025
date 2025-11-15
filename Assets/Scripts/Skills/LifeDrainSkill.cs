@@ -21,6 +21,11 @@ public class LifeDrainSkill : BaseSkill
         Debug.Log($"Executing Life Drain Skill: {skillName}");
         GameManager.Instance.StartCoroutine(WaitForTargetAndDrain());
     }
+    public override string UpdatedDescription()
+    {
+        HeroInstance hero = GameManager.Instance.GetHeroOfelement(ElementType.Nature);
+        return description.Replace("<damage>", Mathf.RoundToInt(baseDamage * (hero.spellPower / 100f)).ToString());
+    }
 
     private IEnumerator WaitForTargetAndDrain()
     {
@@ -46,7 +51,8 @@ public class LifeDrainSkill : BaseSkill
         }
 
         // Damage step
-        int damageToDeal = baseDamage;
+        HeroInstance mainHero = GameManager.Instance.GetHeroOfelement(ElementType.Nature);
+        int damageToDeal = Mathf.RoundToInt(baseDamage * (mainHero.spellPower / 100f));
         int realDamageDone =  target.TakeDamage(damageToDeal, ElementType.Nature);
 
         // Spawn formed projectile at target

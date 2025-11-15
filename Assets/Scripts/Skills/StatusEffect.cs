@@ -11,7 +11,7 @@ public abstract class StatusEffect : MonoBehaviour
     public int duration = 3;
     protected CardInstance target;
 
-    public virtual void Initialize(CardInstance targetUnit, StatusEffect origin)
+    public virtual void Initialize(CardInstance targetUnit, StatusEffect origin, int power)
     {
         target = targetUnit;
     }
@@ -28,7 +28,7 @@ public abstract class StatusEffect : MonoBehaviour
     {
 
     }
-    public virtual void Reapply(StatusEffect newEffect)
+    public virtual void Reapply(StatusEffect newEffect, int power)
     {
         // status reaply logic. This method is for child classes
     }

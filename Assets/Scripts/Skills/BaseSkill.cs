@@ -43,6 +43,7 @@ public abstract class BaseSkill : MonoBehaviour
 
         foreach (var hero in contributingHeroes)
         {
+            hero.spellPower += 1;
             GameObject projectilePrefab = elementsLib.GetElementProjectilePrefab(hero.mainElement);
 
             if (projectilePrefab == null)
@@ -82,5 +83,9 @@ public abstract class BaseSkill : MonoBehaviour
             yield return null;
         }
         projectile.transform.position = targetPos;
+    }
+    public virtual string UpdatedDescription()
+    {
+        return description;
     }
 }

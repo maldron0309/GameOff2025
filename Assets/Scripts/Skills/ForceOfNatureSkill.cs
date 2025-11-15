@@ -12,11 +12,17 @@ public class ForceOfNatureSkill : BaseSkill
     [Header("Projectile Motion")]
     public float projectileSpeed = 6f;
     public float explosionDuration = 0.7f;
+    public int baseDamage;
 
     public override void Execute()
     {
         Debug.Log("Executing Force of Nature Skill: " + skillName);
         GameManager.Instance.StartCoroutine(DoForceOfNature());
+    }
+    public override string UpdatedDescription()
+    {
+        HeroInstance hero = GameManager.Instance.GetHeroOfelement(ElementType.Nature);
+        return description.Replace("<damage>", Mathf.RoundToInt(baseDamage * (hero.spellPower / 100f)).ToString());
     }
 
     private IEnumerator DoForceOfNature()
@@ -28,6 +34,7 @@ public class ForceOfNatureSkill : BaseSkill
         List<CardInstance> poisonedEnemies = new List<CardInstance>();
         List<PoisonEffect> poisonEffects = new List<PoisonEffect>();
         List<int> poisonDamageValues = new List<int>();
+        HeroInstance hero = GameManager.Instance.GetHeroOfelement(ElementType.Nature);
 
         foreach (var enemy in enemyUnits)
         {
@@ -42,7 +49,7 @@ public class ForceOfNatureSkill : BaseSkill
                 poisonedEnemies.Add(enemy);
                 poisonEffects.Add(poison);
 
-                int damage = poison.duration * 5;
+                int damage = poison.duration * Mathf.RoundToInt(Mathf.RoundToInt(baseDamage * (hero.spellPower / 100f)));
                 poisonDamageValues.Add(damage);
             }
         }

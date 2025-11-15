@@ -21,6 +21,11 @@ public class MassHealSkill : BaseSkill
     {
         GameManager.Instance.StartCoroutine(PerformMassHeal());
     }
+    public override string UpdatedDescription()
+    {
+        HeroInstance hero = GameManager.Instance.GetHeroOfelement(ElementType.Nature);
+        return description.Replace("<damage>", Mathf.RoundToInt(baseHeal * (hero.spellPower / 100f)).ToString());
+    }
 
     private IEnumerator PerformMassHeal()
     {
@@ -49,6 +54,7 @@ public class MassHealSkill : BaseSkill
                 friendlyUnits.Add(card);
         }
 
+        HeroInstance hero = GameManager.Instance.GetHeroOfelement(ElementType.Nature);
         // Apply healing to each friendly unit
         foreach (var target in friendlyUnits)
         {
@@ -62,7 +68,7 @@ public class MassHealSkill : BaseSkill
                 GameObject.Destroy(healFx, healEffectDuration);
             }
 
-            target.Heal(baseHeal);
+            target.Heal(Mathf.RoundToInt(baseHeal * (hero.spellPower / 100f)));
 
             // Small stagger for visual pacing
             yield return new WaitForSeconds(0.1f);

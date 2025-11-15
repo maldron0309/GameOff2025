@@ -30,6 +30,17 @@ public class GameManager : MonoBehaviour
     }
 
     public HeroActionMenu heroActionMenuPrefab;
+
+    internal HeroInstance GetHeroOfelement(ElementType element)
+    {
+        foreach (var hero in PlayerHeroes)
+        {
+            if (hero.mainElement == element)
+                return hero;
+        }
+        return null;
+    }
+
     private string pendingActionType = null;
 
     [Header("Turn Settings")]
@@ -125,6 +136,13 @@ public class GameManager : MonoBehaviour
     private IEnumerator PlayerTurnRoutine()
     {
         currentTurn++;
+
+        foreach (var hero in playerField.GetCards())
+        {
+            if (hero == null) continue;
+            yield return StartCoroutine(hero.ProcessStartOfTurnEffects());
+            yield return new WaitForSeconds(0.2f);
+        }
 
         actionsThisTurn = 0;
         ResetAllAttacks();

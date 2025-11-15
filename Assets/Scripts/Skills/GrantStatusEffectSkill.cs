@@ -12,6 +12,7 @@ public class GrantStatusEffectSkill : BaseSkill
     public float elementalLaunchDuration = 0.4f;
     public float mergeDelay = 0.3f;
     public float effectDuration = 0.6f;
+    public ElementType mainElement;
     public StatusEffect statusEffect;
 
     public override void Execute()
@@ -69,7 +70,8 @@ public class GrantStatusEffectSkill : BaseSkill
         // Apply healing
         if (target != null)
         {
-            target.AddStatusEffect(statusEffect);
+            HeroInstance mainHero = GameManager.Instance.GetHeroOfelement(mainElement);
+            target.AddStatusEffect(statusEffect, mainHero.spellPower);
         }
 
         GameManager.Instance.SetPlayerInput(true);

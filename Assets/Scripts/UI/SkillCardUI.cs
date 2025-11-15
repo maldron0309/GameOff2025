@@ -20,7 +20,7 @@ public class SkillCardUI : MonoBehaviour
             nameText.text = skill.skillName;
 
         if (descriptionText != null)
-            descriptionText.text = skill.description;
+            descriptionText.text = skill.UpdatedDescription();
 
         if (iconImage != null && skill.skillIcon != null)
             iconImage.sprite = skill.skillIcon;

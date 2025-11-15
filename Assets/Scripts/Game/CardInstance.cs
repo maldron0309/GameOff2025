@@ -296,18 +296,18 @@ public class CardInstance : MonoBehaviour
 
         transform.position = target;
     }
-    public void AddStatusEffect(StatusEffect effectPrefab)
+    public void AddStatusEffect(StatusEffect effectPrefab, int power)
     {
         // Check if an effect of the same type already exists
         StatusEffect existingEffect = activeEffects.Find(e => e != null && e.GetType() == effectPrefab.GetType());
         if (existingEffect != null)
         {
-            existingEffect.Reapply(effectPrefab);
+            existingEffect.Reapply(effectPrefab, power);
             return;
         }
 
         StatusEffect newEffect = gameObject.AddComponent(effectPrefab.GetType()) as StatusEffect;
-        newEffect.Initialize(this, effectPrefab);
+        newEffect.Initialize(this, effectPrefab, power);
         activeEffects.Add(newEffect);
     }
 

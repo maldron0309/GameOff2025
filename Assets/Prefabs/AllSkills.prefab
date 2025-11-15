@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skillName: Ice Blast
-  description: 'Deal 9 water damage.
+  description: 'Deal <damage> water damage.
 
     25% chance to freeze'
   skillIcon: {fileID: 21300000, guid: 502e753eb42f6c14494373918d2f3e7b, type: 3}
@@ -131,7 +131,7 @@ MonoBehaviour:
 
     Then heal all friendly heroes for damage amount dealt.'
   skillIcon: {fileID: 21300000, guid: aeada8d48b9a7844a9ff0420987c568c, type: 3}
-  requiredElements: 
+  requiredElements: 020000000200000002000000
   formedProjectilePrefab: {fileID: 6709276644064086281, guid: e8c7ef42158dbeb408affcb64101ea98, type: 3}
   explosionPrefab: {fileID: 1714363467411018263, guid: fd3e7606c9b5a4a41a5da6ab7479961c, type: 3}
   projectileSpeed: 6
@@ -181,7 +181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skillName: HealingWind
-  description: Heal all heroes
+  description: Heal all heroes for <value>
   skillIcon: {fileID: 21300000, guid: aeada8d48b9a7844a9ff0420987c568c, type: 3}
   requiredElements: 0100000002000000
   healEffectPrefab: {fileID: 1714363467411018263, guid: 9d41950162247bf45b990eaa5955a0b7, type: 3}
@@ -237,7 +237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skillName: Hurricane
-  description: Deal 8 fire damage to all enemies
+  description: Deal <damage> fire damage to all enemies
   skillIcon: {fileID: 7414261224600783322, guid: d7d8cab9a146b164aa3833b351312f17, type: 3}
   requiredElements: 0000000003000000
   damageEffectPrefab: {fileID: 1714363467411018263, guid: 9d41950162247bf45b990eaa5955a0b7, type: 3}
@@ -312,7 +312,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skillName: Twister
-  description: Deal 3 damage to all enemies
+  description: Deal <damage> damage to all enemies
   skillIcon: {fileID: 7414261224600783322, guid: d7d8cab9a146b164aa3833b351312f17, type: 3}
   requiredElements: 03000000
   damageEffectPrefab: {fileID: 1714363467411018263, guid: 9d41950162247bf45b990eaa5955a0b7, type: 3}
@@ -371,7 +371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skillName: Water Whip
-  description: 'Deal 5 water damage.
+  description: 'Deal <damage> water damage.
 
     Lowers enemy accuracy'
   skillIcon: {fileID: 21300000, guid: 502e753eb42f6c14494373918d2f3e7b, type: 3}
@@ -451,7 +451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skillName: Poison Strike
-  description: 'Deal 5 nature damage.
+  description: 'Deal <damage> nature damage.
 
     Can poison the target'
   skillIcon: {fileID: 21300000, guid: aeada8d48b9a7844a9ff0420987c568c, type: 3}
@@ -531,7 +531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skillName: Super Fire Ball
-  description: 'Deal 12 fire damage
+  description: 'Deal <damage> fire damage
 
     (place holder spell)'
   skillIcon: {fileID: 21300000, guid: 46eca39e2189f5a46a93f105ee137636, type: 3}
@@ -611,7 +611,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skillName: Pressure Stream
-  description: 'Deal 17 water damage.
+  description: 'Deal <damage> water damage.
 
     Greatly reduce target''s accuracy'
   skillIcon: {fileID: 21300000, guid: 502e753eb42f6c14494373918d2f3e7b, type: 3}
@@ -622,7 +622,7 @@ MonoBehaviour:
   mergeDelay: 0.3
   travelDuration: 0.8
   impactDelay: 0.1
-  baseDamage: 9
+  baseDamage: 17
   damageType: 1
   elementsLib: {fileID: 11400000, guid: 6738d2d6b866057489065dcebbc16880, type: 2}
   onHitEffect: {fileID: 1714363467411018263, guid: 65011c07cdf399f47a57ad68b59e5b20, type: 3}
@@ -690,7 +690,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skillName: Healing wave
-  description: Recover HP of selected hero
+  description: Recover <value> HP of selected hero
   skillIcon: {fileID: 21300000, guid: aeada8d48b9a7844a9ff0420987c568c, type: 3}
   requiredElements: 0100000002000000
   healEffectPrefab: {fileID: 1714363467411018263, guid: 9d41950162247bf45b990eaa5955a0b7, type: 3}
@@ -746,7 +746,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skillName: Fire ball
-  description: Deal 5 fire damage
+  description: Deal <damage> fire damage
   skillIcon: {fileID: 21300000, guid: 46eca39e2189f5a46a93f105ee137636, type: 3}
   requiredElements: 00000000
   formedProjectilePrefab: {fileID: 5492295935689872714, guid: c312136891914fb46af1d49656c27422, type: 3}
@@ -824,7 +824,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skillName: Meteor
-  description: 'Deal 20  fire damage
+  description: 'Deal <damage>  fire damage
 
     (place holder spell)'
   skillIcon: {fileID: 21300000, guid: 46eca39e2189f5a46a93f105ee137636, type: 3}
@@ -955,7 +955,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skillName: Twister
-  description: 'Deal 7 water damage to all enemies.
+  description: 'Deal <damage> water damage to all enemies.
 
     50% chance to freeze.'
   skillIcon: {fileID: 7414261224600783322, guid: d7d8cab9a146b164aa3833b351312f17, type: 3}
@@ -1032,7 +1032,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skillName: Poison Cloud
-  description: Deal 3 damage to all enemies
+  description: Deal <damage> nature damage to all enemies
   skillIcon: {fileID: 7414261224600783322, guid: d7d8cab9a146b164aa3833b351312f17, type: 3}
   requiredElements: 0300000002000000
   damageEffectPrefab: {fileID: 1714363467411018263, guid: 9d41950162247bf45b990eaa5955a0b7, type: 3}
@@ -1107,10 +1107,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skillName: Drain Life
-  description: 'Deal 10 natuer damage to target enemy
+  description: 'Deal <damage> natuer damage to target enemy
 
-    Heal all freindly heroes
-    based on the damage dealt.'
+    Heal all freindly
+    heroes based on the damage dealt.'
   skillIcon: {fileID: 21300000, guid: aeada8d48b9a7844a9ff0420987c568c, type: 3}
   requiredElements: 0200000002000000
   formedProjectilePrefab: {fileID: 6709276644064086281, guid: e8c7ef42158dbeb408affcb64101ea98, type: 3}
@@ -1164,7 +1164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skillName: Ice bolt
-  description: 'Deal 5 water damage.
+  description: 'Deal <damage> water damage.
 
     15% chance to freeze'
   skillIcon: {fileID: 21300000, guid: 502e753eb42f6c14494373918d2f3e7b, type: 3}
@@ -1242,7 +1242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skillName: Tornado
-  description: Deal 3 damage to all enemies
+  description: Deal <damage> damage to all enemies
   skillIcon: {fileID: 7414261224600783322, guid: d7d8cab9a146b164aa3833b351312f17, type: 3}
   requiredElements: 0300000003000000
   damageEffectPrefab: {fileID: 1714363467411018263, guid: 9d41950162247bf45b990eaa5955a0b7, type: 3}
@@ -1301,7 +1301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skillName: Regeneration
-  description: 
+  description: Grant +<value> health regeneration to selected hero
   skillIcon: {fileID: 0}
   requiredElements: 0200000002000000
   effectPrefab: {fileID: 1714363467411018263, guid: fd3e7606c9b5a4a41a5da6ab7479961c, type: 3}
@@ -1433,7 +1433,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skillName: Hurricane
-  description: Deal 3 damage to all enemies
+  description: Deal <damage> damage to all enemies
   skillIcon: {fileID: 7414261224600783322, guid: d7d8cab9a146b164aa3833b351312f17, type: 3}
   requiredElements: 030000000300000003000000
   damageEffectPrefab: {fileID: 1714363467411018263, guid: 9d41950162247bf45b990eaa5955a0b7, type: 3}

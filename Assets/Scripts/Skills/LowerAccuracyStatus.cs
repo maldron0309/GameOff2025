@@ -4,9 +4,9 @@ using UnityEngine;
 public class LowerAccuracyStatus : StatusEffect
 {
     public int accuracyPenalty;
-    public override void Initialize(CardInstance targetUnit, StatusEffect origin)
+    public override void Initialize(CardInstance targetUnit, StatusEffect origin, int power)
     {
-        base.Initialize(targetUnit, origin);
+        base.Initialize(targetUnit, origin, power);
         LowerAccuracyStatus originAccStatus = origin as LowerAccuracyStatus;
         accuracyPenalty = originAccStatus.accuracyPenalty;
         EffectsManager.instance.CreateFloatingText(target.transform.position, "Accuracy down", Color.black);
@@ -22,7 +22,7 @@ public class LowerAccuracyStatus : StatusEffect
         }
         yield return null;
     }
-    public override void Reapply(StatusEffect newEffect)
+    public override void Reapply(StatusEffect newEffect, int power)
     {
         LowerAccuracyStatus newAccStatus = newEffect as LowerAccuracyStatus;
         duration = Mathf.Max(duration, newAccStatus.duration);
