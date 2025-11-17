@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
     private int currentStageIndex = 0;
     public GameBoard[] allStages;
     public Transform roomOrigin;
+    GameBoard currentRoom;
 
     private string pendingActionType = null;
 
@@ -416,19 +417,21 @@ public class GameManager : MonoBehaviour
         Debug.Log("Loading next room...");
 
         GameBoard roomPrefab = allStages[currentStageIndex];
+        if (currentRoom != null)
+            Destroy(currentRoom.gameObject);
 
-        GameBoard newRoom = Instantiate(roomPrefab, roomOrigin);
+        currentRoom = Instantiate(roomPrefab, roomOrigin);
 
-        playerField.fieldPositions = newRoom.playerLocations.ToList();
-        playerField.spawnPoint = newRoom.playerEnterLocation;
-        enemyField.fieldPositions = newRoom.enemyLocations.ToList();
-        enemyField.spawnPoint = newRoom.enemyEnterLocation;
-        exitPathPoints = newRoom.exitPath;
+        playerField.fieldPositions = currentRoom.playerLocations.ToList();
+        playerField.spawnPoint = currentRoom.playerEnterLocation;
+        enemyField.fieldPositions = currentRoom.enemyLocations.ToList();
+        enemyField.spawnPoint = currentRoom.enemyEnterLocation;
+        exitPathPoints = currentRoom.exitPath;
 
         playerField.ClearPositions();
         foreach (var hero in PlayerHeroes)
         {
-            hero.transform.position = newRoom.playerEnterLocation.position;
+            hero.transform.position = currentRoom.playerEnterLocation.position;
             playerField.ReasignPositions(hero);
         }
 

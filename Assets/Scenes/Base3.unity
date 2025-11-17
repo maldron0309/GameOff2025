@@ -344,7 +344,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e689895781598804ea065d6f881bbab7, type: 2}
   - {fileID: 11400000, guid: e9ae7d5f1a5b8d647936db430b06dbe5, type: 2}
   waveCounter: 0
-  maxWavesCount: 10
+  maxWavesCount: 1
   exitPathPoints: []
   allStages:
   - {fileID: 2834218747037540613, guid: e618952bd17bcad419fbcf7890b9cbcb, type: 3}
