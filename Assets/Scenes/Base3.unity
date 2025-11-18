@@ -1891,6 +1891,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   floatingTextPrefab: {fileID: 1589076711752116060, guid: abaf628a259e3c345897d18050c6411d, type: 3}
+  soundEffectPrefab: {fileID: 4576910742704189589, guid: 355bbdea6a96c0e4997c845e7c3d5a66, type: 3}
 --- !u!1 &1110206449
 GameObject:
   m_ObjectHideFlags: 0

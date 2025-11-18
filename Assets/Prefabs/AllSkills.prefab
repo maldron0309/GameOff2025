@@ -184,7 +184,7 @@ MonoBehaviour:
   skillName: HealingWind
   description: Heal all heroes for <value>
   skillIcon: {fileID: 21300000, guid: aeada8d48b9a7844a9ff0420987c568c, type: 3}
-  requiredElements: 0100000002000000
+  requiredElements: 0300000002000000
   healEffectPrefab: {fileID: 1714363467411018263, guid: 9d41950162247bf45b990eaa5955a0b7, type: 3}
   elementsLib: {fileID: 11400000, guid: 6738d2d6b866057489065dcebbc16880, type: 2}
   elementalRiseHeight: 2
@@ -859,6 +859,80 @@ MonoBehaviour:
   effectPrefab: {fileID: 0}
   duration: 3
   damagePerTurn: 8
+--- !u!1 &3868967560574743431
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7111370223924812283}
+  - component: {fileID: 4679699347478331217}
+  - component: {fileID: 5580457964382109196}
+  m_Layer: 0
+  m_Name: ProtectFromFire
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7111370223924812283
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3868967560574743431}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3888285316096645545}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4679699347478331217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3868967560574743431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee508ca76b48c3a42907097cc6b267a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillName: Protect
+  description: Negate next incoming Fire based attack
+  skillIcon: {fileID: 3078762230685488240, guid: 8959a6af71418b045ac764480d5fcb7a, type: 3}
+  requiredElements: 00000000
+  effectPrefab: {fileID: 1714363467411018263, guid: fd3e7606c9b5a4a41a5da6ab7479961c, type: 3}
+  elementsLib: {fileID: 11400000, guid: 6738d2d6b866057489065dcebbc16880, type: 2}
+  elementalRiseHeight: 3
+  elementalLaunchDuration: 0.4
+  mergeDelay: 0.3
+  effectDuration: 0.6
+  mainElement: 0
+  statusEffect: {fileID: 5580457964382109196}
+--- !u!114 &5580457964382109196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3868967560574743431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90697c9a77c695b40989819e298307fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectName: Protect from Fire
+  description: Negate next incoming Fire based attack
+  effectPrefab: {fileID: 6709276644064086281, guid: 9babe8a219f9ec24084afd3eabd4e1d0, type: 3}
+  duration: 1
+  element: 0
 --- !u!1 &3875543213905387267
 GameObject:
   m_ObjectHideFlags: 0
@@ -907,6 +981,10 @@ Transform:
   - {fileID: 1363584519338582312}
   - {fileID: 3960938627122982397}
   - {fileID: 3414202757869708508}
+  - {fileID: 7111370223924812283}
+  - {fileID: 578380868019956768}
+  - {fileID: 3612042997355899802}
+  - {fileID: 1388280566008209799}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5296848784323969942
@@ -1197,6 +1275,80 @@ MonoBehaviour:
   description: 
   effectPrefab: {fileID: 0}
   duration: 2
+--- !u!1 &6395192032614187813
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1388280566008209799}
+  - component: {fileID: 1994974292658115447}
+  - component: {fileID: 1392997919306400910}
+  m_Layer: 0
+  m_Name: ProtectFromWind
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1388280566008209799
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6395192032614187813}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3888285316096645545}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1994974292658115447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6395192032614187813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee508ca76b48c3a42907097cc6b267a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillName: Protect
+  description: Negate next incoming Wind based attack
+  skillIcon: {fileID: -1562093178560388313, guid: 8959a6af71418b045ac764480d5fcb7a, type: 3}
+  requiredElements: 03000000
+  effectPrefab: {fileID: 1714363467411018263, guid: fd3e7606c9b5a4a41a5da6ab7479961c, type: 3}
+  elementsLib: {fileID: 11400000, guid: 6738d2d6b866057489065dcebbc16880, type: 2}
+  elementalRiseHeight: 3
+  elementalLaunchDuration: 0.4
+  mergeDelay: 0.3
+  effectDuration: 0.6
+  mainElement: 3
+  statusEffect: {fileID: 1392997919306400910}
+--- !u!114 &1392997919306400910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6395192032614187813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90697c9a77c695b40989819e298307fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectName: Protect from Fire
+  description: Negate next incoming Wind based attack
+  effectPrefab: {fileID: 6709276644064086281, guid: 23972ba5287a0c244b078253dc02a2b7, type: 3}
+  duration: 1
+  element: 3
 --- !u!1 &6657980912034565992
 GameObject:
   m_ObjectHideFlags: 0
@@ -1255,6 +1407,154 @@ MonoBehaviour:
   damageElement: 3
   statusEffect: {fileID: 0}
   chanceToProc: 0
+--- !u!1 &7294114056512695778
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3612042997355899802}
+  - component: {fileID: 5798010136577715217}
+  - component: {fileID: 3795785208988558013}
+  m_Layer: 0
+  m_Name: ProtectFromNature
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3612042997355899802
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7294114056512695778}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3888285316096645545}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5798010136577715217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7294114056512695778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee508ca76b48c3a42907097cc6b267a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillName: Protect
+  description: Negate next incoming Nature based attack
+  skillIcon: {fileID: -7105074764738127781, guid: 8959a6af71418b045ac764480d5fcb7a, type: 3}
+  requiredElements: 02000000
+  effectPrefab: {fileID: 1714363467411018263, guid: fd3e7606c9b5a4a41a5da6ab7479961c, type: 3}
+  elementsLib: {fileID: 11400000, guid: 6738d2d6b866057489065dcebbc16880, type: 2}
+  elementalRiseHeight: 3
+  elementalLaunchDuration: 0.4
+  mergeDelay: 0.3
+  effectDuration: 0.6
+  mainElement: 2
+  statusEffect: {fileID: 3795785208988558013}
+--- !u!114 &3795785208988558013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7294114056512695778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90697c9a77c695b40989819e298307fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectName: Protect from Fire
+  description: Negate next incoming Nature based attack
+  effectPrefab: {fileID: 6709276644064086281, guid: 27943e1427f1b4248bfec9c0c662f7e0, type: 3}
+  duration: 1
+  element: 2
+--- !u!1 &7324498066203634667
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 578380868019956768}
+  - component: {fileID: 871992201037322002}
+  - component: {fileID: 5987382366290970084}
+  m_Layer: 0
+  m_Name: ProtectFromWater
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &578380868019956768
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7324498066203634667}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3888285316096645545}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &871992201037322002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7324498066203634667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee508ca76b48c3a42907097cc6b267a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillName: Protect
+  description: Negate next incoming Water based attack
+  skillIcon: {fileID: 5208024241582667449, guid: 8959a6af71418b045ac764480d5fcb7a, type: 3}
+  requiredElements: 01000000
+  effectPrefab: {fileID: 1714363467411018263, guid: fd3e7606c9b5a4a41a5da6ab7479961c, type: 3}
+  elementsLib: {fileID: 11400000, guid: 6738d2d6b866057489065dcebbc16880, type: 2}
+  elementalRiseHeight: 3
+  elementalLaunchDuration: 0.4
+  mergeDelay: 0.3
+  effectDuration: 0.6
+  mainElement: 1
+  statusEffect: {fileID: 5987382366290970084}
+--- !u!114 &5987382366290970084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7324498066203634667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90697c9a77c695b40989819e298307fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectName: Protect from Fire
+  description: Negate next incoming Fire based attack
+  effectPrefab: {fileID: 6709276644064086281, guid: 721c3ef872a717145a08403cbdb71832, type: 3}
+  duration: 1
+  element: 1
 --- !u!1 &8304244999460207555
 GameObject:
   m_ObjectHideFlags: 0
@@ -1303,7 +1603,7 @@ MonoBehaviour:
   skillName: Regeneration
   description: Grant +<value> health regeneration to selected hero
   skillIcon: {fileID: 0}
-  requiredElements: 0200000002000000
+  requiredElements: 0200000000000000
   effectPrefab: {fileID: 1714363467411018263, guid: fd3e7606c9b5a4a41a5da6ab7479961c, type: 3}
   elementsLib: {fileID: 11400000, guid: 6738d2d6b866057489065dcebbc16880, type: 2}
   elementalRiseHeight: 2

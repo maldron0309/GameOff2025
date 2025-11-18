@@ -207,31 +207,44 @@ public class CardInstance : MonoBehaviour
                 return 0;
             }
         }
+
+        ElementalProtectionEffect protection = GetComponent<ElementalProtectionEffect>();
+        if (protection != null)
+        {
+            if (protection.element == element)
+            {
+                Destroy(protection);
+                EffectsManager.instance.CreateFloatingText(transform.position, "protected", Color.white);
+                return 0;
+            }
+        }
+
+
         int finalDamage = dmg;
         if (resistances != null)
         {
             Color textColor = Color.black;
-            float resistance = 0f;
+            float resistance = 1000f;
             switch (element)
             {
                 case ElementType.Fire:
-                    resistance = resistances.FireResistance;
+                    resistance = resistances.GetResistanceValue(ElementType.Fire);
                     textColor = Color.red;
                     break;
                 case ElementType.Water:
-                    resistance = resistances.WaterResistance;
+                    resistance = resistances.GetResistanceValue(ElementType.Water);
                     textColor = Color.cyan;
                     break;
                 case ElementType.Nature:
-                    resistance = resistances.NatureResistance;
+                    resistance = resistances.GetResistanceValue(ElementType.Nature);
                     textColor = Color.green;
                     break;
                 case ElementType.Wind:
-                    resistance = resistances.WindResistance;
+                    resistance = resistances.GetResistanceValue(ElementType.Wind);
                     textColor = Color.gray;
                     break;
                 case ElementType.Physical:
-                    resistance = resistances.PhysicalResistance;
+                    resistance = resistances.GetResistanceValue(ElementType.Physical);
                     break;
             }
 
@@ -239,6 +252,7 @@ public class CardInstance : MonoBehaviour
             finalDamage = Mathf.RoundToInt(dmg * (1f - (resistance / 100f)));
             EffectsManager.instance.CreateFloatingText(transform.position, finalDamage.ToString() , textColor);
         }
+
 
         int realDamageDone = Mathf.Min(finalDamage, currentHealth); // needed for life drain skill
         currentHealth -= finalDamage;

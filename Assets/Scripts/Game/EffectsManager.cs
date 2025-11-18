@@ -6,6 +6,7 @@ public class EffectsManager : MonoBehaviour
 
     [Header("Prefabs")]
     public GameObject floatingTextPrefab;
+    public GameObject soundEffectPrefab;
 
     private void Awake()
     {
@@ -32,5 +33,16 @@ public class EffectsManager : MonoBehaviour
         {
             floatingText.Initialize(message, color, size, floatSpeed, fadeDuration);
         }
+    }
+    public void CreateSoundEffect(AudioClip clip, Vector3 position, float volume = 1f)
+    {
+        if (clip == null) return;
+
+        SoundEffect sfx = Instantiate(soundEffectPrefab, position, Quaternion.identity).GetComponent<SoundEffect>();
+
+        AudioSource src = sfx.GetComponent<AudioSource>();
+        if (src != null) src.volume = volume;
+
+        sfx.Play(clip);
     }
 }

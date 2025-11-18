@@ -54,9 +54,11 @@ public abstract class BaseSkill : MonoBehaviour
 
             GameObject proj = GameObject.Instantiate(projectilePrefab, hero.transform.position, Quaternion.identity);
             elementalProjectiles.Add(proj);
+            EffectsManager.instance.CreateSoundEffect(elementsLib.GetElementSound(hero.mainElement), transform.position);
 
             Vector3 riseTarget = hero.transform.position + Vector3.up * riseHeight;
             GameManager.Instance.StartCoroutine(MoveProjectile(proj, riseTarget, launchDuration));
+            yield return new WaitForSeconds(0.5f);
         }
 
         yield return new WaitForSeconds(launchDuration + mergeDelay);

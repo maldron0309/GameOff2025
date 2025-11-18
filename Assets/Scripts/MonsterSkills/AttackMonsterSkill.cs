@@ -43,7 +43,7 @@ public class AttackMonsterSkill : BaseMonsterSkill
         if (accStatus != null)
             accuracy -= accStatus.accuracyPenalty;
         // Deal damage
-        target.TakeDamage(damage, ElementType.Physical, accuracy);
+        target.TakeDamage(damage, ElementType.Fire, accuracy);
 
         // Return (0.25s)
         yield return MoveToPosition(originalPosition, 0.25f);

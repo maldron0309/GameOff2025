@@ -8,12 +8,17 @@ public abstract class StatusEffect : MonoBehaviour
     [TextArea(2, 3)]
     public string description;
     public GameObject effectPrefab;
+    private GameObject effectObject;
     public int duration = 3;
     protected CardInstance target;
 
     public virtual void Initialize(CardInstance targetUnit, StatusEffect origin, int power)
     {
         target = targetUnit;
+        effectPrefab = origin.effectPrefab;
+        duration = origin.duration;
+        if (effectPrefab)
+            effectObject = Instantiate(effectPrefab, target.transform);
     }
     public virtual void OnTurnStartInstant()
     {
@@ -26,7 +31,12 @@ public abstract class StatusEffect : MonoBehaviour
     }
     protected virtual void OnExpire()
     {
-
+        Destroy(effectObject);
+    }
+    private void OnDestroy()
+    {
+        if(effectObject)
+            Destroy(effectObject);
     }
     public virtual void Reapply(StatusEffect newEffect, int power)
     {

@@ -9,7 +9,8 @@ public class ElementIconLibrary : ScriptableObject
     {
         public ElementType element;
         public Sprite icon;
-        public GameObject elementalProjectilePrefab; // <-- NEW
+        public GameObject elementalProjectilePrefab;
+        public AudioClip sfxOnUse;
     }
 
     public List<ElementIconPair> icons = new List<ElementIconPair>();
@@ -30,5 +31,10 @@ public class ElementIconLibrary : ScriptableObject
     {
         var pair = icons.Find(e => e.element == element);
         return pair?.elementalProjectilePrefab;
+    }
+    public AudioClip GetElementSound(ElementType element)
+    {
+        var pair = icons.Find(e => e.element == element);
+        return pair?.sfxOnUse;
     }
 }
