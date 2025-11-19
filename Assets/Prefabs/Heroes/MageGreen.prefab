@@ -624,11 +624,13 @@ MonoBehaviour:
   healthText: {fileID: 1140594244276213103}
   cardSprite: {fileID: 8469931686135480976}
   highlightSprite: {fileID: 9070761382798154575}
+  animator: {fileID: 7945994195316409384}
   troopsField: {fileID: 0}
   currentContainer: {fileID: 0}
   activeEffects: []
-  heroData: {fileID: 11400000, guid: ee8e3ba51ff30db47b7384e19a611fd7, type: 2}
   mainElement: 2
+  spellPower: 100
+  isDefeated: 0
 --- !u!61 &3303585355228617710
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -742,11 +744,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f984bcfb3ac8764e945ae2421d0f0b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FireResistance: 0
-  WaterResistance: 0
-  NatureResistance: 0
-  WindResistance: 0
-  PhysicalResistance: 25
+  strong: 
+  wakness: 
 --- !u!1 &8612068103122048513
 GameObject:
   m_ObjectHideFlags: 0
@@ -757,6 +756,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8922424402728669570}
   - component: {fileID: 8469931686135480976}
+  - component: {fileID: 7945994195316409384}
   m_Layer: 0
   m_Name: CardArt
   m_TagString: Untagged
@@ -834,3 +834,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &7945994195316409384
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8612068103122048513}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 64a0a8ff655926e499db2e2085855bc3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

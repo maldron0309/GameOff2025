@@ -100,6 +100,8 @@ public class GameManager : MonoBehaviour
         }
 
         // Spawn enemy wave
+        waveCounter++;
+        InfoPanel.instance.UpdateWavesCount(waveCounter, maxWavesCount);
         yield return enemySpawner.SpawnWaveCoroutine();
         waveActive = true;
 
@@ -122,6 +124,7 @@ public class GameManager : MonoBehaviour
             waveCounter++;
             if (waveCounter < maxWavesCount)
             {
+                InfoPanel.instance.UpdateWavesCount(waveCounter, maxWavesCount);
                 yield return enemySpawner.SpawnWaveCoroutine();
                 waveActive = true;
 
@@ -152,6 +155,11 @@ public class GameManager : MonoBehaviour
     {
         currentTurn++;
 
+        if (playerField.AllHeroesDefeated())
+        {
+            GameOverScreen.instance.Show();
+        }
+
         foreach (var hero in playerField.GetCards())
         {
             if (hero == null) continue;
@@ -173,7 +181,8 @@ public class GameManager : MonoBehaviour
     private IEnumerator EnemyTurnRoutine()
     {
         List<CardInstance> enemyCards = enemyField.GetCards();
-        List<CardInstance> playerCards = playerField.GetCards();
+        List<CardInstance> playerCards = playerField.GetCards().ToList();
+        playerCards.RemoveAll(x => (x as HeroInstance).isDefeated);
 
         foreach (var enemyCard in new List<CardInstance>(enemyCards))
         {
@@ -436,5 +445,10 @@ public class GameManager : MonoBehaviour
         }
 
         yield return new WaitForSeconds(1f);
+    }
+    public void RemoveElementFromDeck(ElementType element)
+    {
+        if(playerDeck.availableElements.Contains(element))
+            playerDeck.availableElements.Remove(element);
     }
 }

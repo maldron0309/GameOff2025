@@ -1,0 +1,775 @@
+fileFormatVersion: 2
+guid: c55eb18669145ba4facf409d23f7360f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6085681306932021158
+    second: firewispsheet_0
+  - first:
+      213: -752903691045118949
+    second: firewispsheet_1
+  - first:
+      213: -6494332428904640068
+    second: firewispsheet_2
+  - first:
+      213: -2620723241149921641
+    second: firewispsheet_3
+  - first:
+      213: 1280775985808732969
+    second: firewispsheet_4
+  - first:
+      213: 6436607833867471286
+    second: firewispsheet_5
+  - first:
+      213: 6513253797578145285
+    second: firewispsheet_6
+  - first:
+      213: 7422351655755365922
+    second: firewispsheet_7
+  - first:
+      213: -1620968332520661799
+    second: firewispsheet_8
+  - first:
+      213: 180551646085576181
+    second: firewispsheet_9
+  - first:
+      213: 5679106664126083957
+    second: firewispsheet_10
+  - first:
+      213: 3643487284556177231
+    second: firewispsheet_11
+  - first:
+      213: -9094311200560372138
+    second: firewispsheet_12
+  - first:
+      213: -8197690169200108339
+    second: firewispsheet_13
+  - first:
+      213: -1160911096984124927
+    second: firewispsheet_14
+  - first:
+      213: -4238036969290908697
+    second: firewispsheet_15
+  - first:
+      213: 4892295519402641796
+    second: firewispsheet_16
+  - first:
+      213: -519564508578708558
+    second: firewispsheet_17
+  - first:
+      213: -4025036744535599677
+    second: firewispsheet_18
+  - first:
+      213: 3816722964452519724
+    second: firewispsheet_19
+  - first:
+      213: -3357378976590622235
+    second: firewispsheet_20
+  - first:
+      213: -557340558441720467
+    second: firewispsheet_21
+  - first:
+      213: 2909586283284515810
+    second: firewispsheet_22
+  - first:
+      213: -2195375635759723919
+    second: firewispsheet_23
+  - first:
+      213: -8917219263460837946
+    second: firewispsheet_24
+  - first:
+      213: -5305959955255241778
+    second: firewispsheet_25
+  - first:
+      213: 880717689340581822
+    second: firewispsheet_26
+  - first:
+      213: 1473408525726979049
+    second: firewispsheet_27
+  - first:
+      213: -7872279620092358785
+    second: firewispsheet_28
+  - first:
+      213: 119201656411497469
+    second: firewispsheet_29
+  - first:
+      213: -8891349425352329726
+    second: firewispsheet_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: firewispsheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a70be3c7eea47450800000000000000
+      internalID: 6085681306932021158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firewispsheet_1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 320
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1cdc2105162d85f0800000000000000
+      internalID: -752903691045118949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firewispsheet_2
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 320
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb1d6d9701f7fd5a0800000000000000
+      internalID: -6494332428904640068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firewispsheet_3
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 320
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79606ace81251abd0800000000000000
+      internalID: -2620723241149921641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firewispsheet_4
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 320
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 923faf629fa36c110800000000000000
+      internalID: 1280775985808732969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firewispsheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b9ca28e8bc635950800000000000000
+      internalID: 6436607833867471286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firewispsheet_6
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 240
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50efb98f1d9b36a50800000000000000
+      internalID: 6513253797578145285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firewispsheet_7
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 240
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22eb45f618d710760800000000000000
+      internalID: 7422351655755365922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firewispsheet_8
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 240
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dcd2fbc3e92189e0800000000000000
+      internalID: -1620968332520661799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firewispsheet_9
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 240
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f5fa88f3c2718200800000000000000
+      internalID: 180551646085576181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firewispsheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 573f9ccfb6d30de40800000000000000
+      internalID: 5679106664126083957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firewispsheet_11
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 160
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4f9f9b9164409230800000000000000
+      internalID: 3643487284556177231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firewispsheet_12
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 160
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6562eb595248ac180800000000000000
+      internalID: -9094311200560372138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firewispsheet_13
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 160
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcc9d1e6934fb3e80800000000000000
+      internalID: -8197690169200108339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firewispsheet_14
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 160
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 102c370128d93efe0800000000000000
+      internalID: -1160911096984124927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firewispsheet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eb317c94d77f25c0800000000000000
+      internalID: -4238036969290908697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firewispsheet_16
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 80
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 489ca3abadce4e340800000000000000
+      internalID: 4892295519402641796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firewispsheet_17
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 80
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b3044c05d22ac8f0800000000000000
+      internalID: -519564508578708558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firewispsheet_18
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 80
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c59f0a08623428c0800000000000000
+      internalID: -4025036744535599677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firewispsheet_19
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 80
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2fa4467059b7f430800000000000000
+      internalID: 3816722964452519724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firewispsheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e193f3eb913861d0800000000000000
+      internalID: -3357378976590622235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firewispsheet_21
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d65d92b07bde348f0800000000000000
+      internalID: -557340558441720467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firewispsheet_22
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ebc58a1f4de06820800000000000000
+      internalID: 2909586283284515810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: firewispsheet_23
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17a8ef9ad757881e0800000000000000
+      internalID: -2195375635759723919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 033484a7056a3ec409e27685c09cb7dd
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      firewispsheet_0: 6085681306932021158
+      firewispsheet_1: -752903691045118949
+      firewispsheet_10: 5679106664126083957
+      firewispsheet_11: 3643487284556177231
+      firewispsheet_12: -9094311200560372138
+      firewispsheet_13: -8197690169200108339
+      firewispsheet_14: -1160911096984124927
+      firewispsheet_15: -4238036969290908697
+      firewispsheet_16: 4892295519402641796
+      firewispsheet_17: -519564508578708558
+      firewispsheet_18: -4025036744535599677
+      firewispsheet_19: 3816722964452519724
+      firewispsheet_2: -6494332428904640068
+      firewispsheet_20: -3357378976590622235
+      firewispsheet_21: -557340558441720467
+      firewispsheet_22: 2909586283284515810
+      firewispsheet_23: -2195375635759723919
+      firewispsheet_3: -2620723241149921641
+      firewispsheet_4: 1280775985808732969
+      firewispsheet_5: 6436607833867471286
+      firewispsheet_6: 6513253797578145285
+      firewispsheet_7: 7422351655755365922
+      firewispsheet_8: -1620968332520661799
+      firewispsheet_9: 180551646085576181
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

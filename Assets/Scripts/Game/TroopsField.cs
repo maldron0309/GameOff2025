@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class TroopsField : MonoBehaviour
@@ -112,5 +113,10 @@ public class TroopsField : MonoBehaviour
     internal void ClearPositions()
     {
         occupiedPositions.Clear();
+    }
+
+    public bool AllHeroesDefeated()
+    {
+        return cardsOnField.Count > 0 && cardsOnField.Where(x => !(x as HeroInstance).isDefeated).Count() == 0;
     }
 }

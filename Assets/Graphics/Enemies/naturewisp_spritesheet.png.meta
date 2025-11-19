@@ -1,0 +1,1048 @@
+fileFormatVersion: 2
+guid: 00e72d5a12617b044b0100c4435dd909
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7820589083053927572
+    second: naturewisp_spritesheet_0
+  - first:
+      213: -5628868663802848888
+    second: naturewisp_spritesheet_1
+  - first:
+      213: 9123992649232865513
+    second: naturewisp_spritesheet_2
+  - first:
+      213: 5670594052131610972
+    second: naturewisp_spritesheet_3
+  - first:
+      213: -5516274933845383203
+    second: naturewisp_spritesheet_4
+  - first:
+      213: 6340104862102496450
+    second: naturewisp_spritesheet_5
+  - first:
+      213: -462604238180327201
+    second: naturewisp_spritesheet_6
+  - first:
+      213: 1905047990289670806
+    second: naturewisp_spritesheet_7
+  - first:
+      213: 69842585312242435
+    second: naturewisp_spritesheet_8
+  - first:
+      213: 626818070954954086
+    second: naturewisp_spritesheet_9
+  - first:
+      213: 2768256755295925455
+    second: naturewisp_spritesheet_10
+  - first:
+      213: 6005014934308665928
+    second: naturewisp_spritesheet_11
+  - first:
+      213: -1878231016380485064
+    second: naturewisp_spritesheet_12
+  - first:
+      213: -3797370363032642792
+    second: naturewisp_spritesheet_13
+  - first:
+      213: -3371468548227673379
+    second: naturewisp_spritesheet_14
+  - first:
+      213: -7637001018425256116
+    second: naturewisp_spritesheet_15
+  - first:
+      213: -5930540664223608846
+    second: naturewisp_spritesheet_16
+  - first:
+      213: 5511862367647370945
+    second: naturewisp_spritesheet_17
+  - first:
+      213: -8608059840309427707
+    second: naturewisp_spritesheet_18
+  - first:
+      213: 4442210720843133035
+    second: naturewisp_spritesheet_19
+  - first:
+      213: -456990341970871026
+    second: naturewisp_spritesheet_20
+  - first:
+      213: 3916897606514174063
+    second: naturewisp_spritesheet_21
+  - first:
+      213: 4592179301545410543
+    second: naturewisp_spritesheet_22
+  - first:
+      213: 2676173897398581028
+    second: naturewisp_spritesheet_23
+  - first:
+      213: -893739251896945293
+    second: naturewisp_spritesheet_24
+  - first:
+      213: 995225813860567169
+    second: naturewisp_spritesheet_25
+  - first:
+      213: -6127637905829332161
+    second: naturewisp_spritesheet_26
+  - first:
+      213: -8031686094462258700
+    second: naturewisp_spritesheet_27
+  - first:
+      213: 9042041474891849364
+    second: naturewisp_spritesheet_28
+  - first:
+      213: -922262809459048736
+    second: naturewisp_spritesheet_29
+  - first:
+      213: -7100575371719667847
+    second: naturewisp_spritesheet_30
+  - first:
+      213: -8561254617625651850
+    second: naturewisp_spritesheet_31
+  - first:
+      213: -1660957673146638625
+    second: naturewisp_spritesheet_32
+  - first:
+      213: 5004048878288113106
+    second: naturewisp_spritesheet_33
+  - first:
+      213: -9125471292142906489
+    second: naturewisp_spritesheet_34
+  - first:
+      213: -2344973065953206086
+    second: naturewisp_spritesheet_35
+  - first:
+      213: 4388898587610553213
+    second: naturewisp_spritesheet_36
+  - first:
+      213: -3103704103034634897
+    second: naturewisp_spritesheet_37
+  - first:
+      213: 976832023766359382
+    second: naturewisp_spritesheet_38
+  - first:
+      213: 894548610593149596
+    second: naturewisp_spritesheet_39
+  - first:
+      213: 8308105416983971541
+    second: naturewisp_spritesheet_40
+  - first:
+      213: 3785973011760108900
+    second: naturewisp_spritesheet_41
+  - first:
+      213: 3581437569275833904
+    second: naturewisp_spritesheet_42
+  - first:
+      213: -8091771774395419708
+    second: naturewisp_spritesheet_43
+  - first:
+      213: 8769543323235625556
+    second: naturewisp_spritesheet_44
+  - first:
+      213: -6066053173499178189
+    second: naturewisp_spritesheet_45
+  - first:
+      213: 2057496254344384404
+    second: naturewisp_spritesheet_46
+  - first:
+      213: -5034294258453818463
+    second: naturewisp_spritesheet_47
+  - first:
+      213: 4045804953850731520
+    second: naturewisp_spritesheet_48
+  - first:
+      213: 4252603618115155425
+    second: naturewisp_spritesheet_49
+  - first:
+      213: 7838196400285514141
+    second: naturewisp_spritesheet_50
+  - first:
+      213: -5453146610868447324
+    second: naturewisp_spritesheet_51
+  - first:
+      213: 632411078855658543
+    second: naturewisp_spritesheet_52
+  - first:
+      213: 8196596359238507261
+    second: naturewisp_spritesheet_53
+  - first:
+      213: -2666569607787294457
+    second: naturewisp_spritesheet_54
+  - first:
+      213: -9162340050677759064
+    second: naturewisp_spritesheet_55
+  - first:
+      213: 4533971650268705048
+    second: naturewisp_spritesheet_56
+  - first:
+      213: -1385501794563101688
+    second: naturewisp_spritesheet_57
+  - first:
+      213: 8877013518693942098
+    second: naturewisp_spritesheet_58
+  - first:
+      213: 680515156590173577
+    second: naturewisp_spritesheet_59
+  - first:
+      213: -4352772257229150366
+    second: naturewisp_spritesheet_60
+  - first:
+      213: -2237465793225089332
+    second: naturewisp_spritesheet_61
+  - first:
+      213: 1778659301610248144
+    second: naturewisp_spritesheet_62
+  - first:
+      213: 1182048316281883991
+    second: naturewisp_spritesheet_63
+  - first:
+      213: -4681719074361996878
+    second: naturewisp_spritesheet_64
+  - first:
+      213: -8682095706177817742
+    second: naturewisp_spritesheet_65
+  - first:
+      213: 8563436196772221042
+    second: naturewisp_spritesheet_66
+  - first:
+      213: -6348638429605306481
+    second: naturewisp_spritesheet_67
+  - first:
+      213: 5401389331544169262
+    second: naturewisp_spritesheet_68
+  - first:
+      213: -8810077854648797605
+    second: naturewisp_spritesheet_69
+  - first:
+      213: 4361096030976683250
+    second: naturewisp_spritesheet_70
+  - first:
+      213: -5384113011957153465
+    second: naturewisp_spritesheet_71
+  - first:
+      213: 5128990122982723774
+    second: naturewisp_spritesheet_72
+  - first:
+      213: 5944913147219804300
+    second: naturewisp_spritesheet_73
+  - first:
+      213: 7355007606522684047
+    second: naturewisp_spritesheet_74
+  - first:
+      213: 8139128426888316687
+    second: naturewisp_spritesheet_75
+  - first:
+      213: -7850273627259660936
+    second: naturewisp_spritesheet_76
+  - first:
+      213: -4532117174921267243
+    second: naturewisp_spritesheet_77
+  - first:
+      213: 4738141949447853634
+    second: naturewisp_spritesheet_78
+  - first:
+      213: 7627278203599252327
+    second: naturewisp_spritesheet_79
+  - first:
+      213: -9168468322237594118
+    second: naturewisp_spritesheet_80
+  - first:
+      213: 4408397359817577444
+    second: naturewisp_spritesheet_81
+  - first:
+      213: 7681280296540284497
+    second: naturewisp_spritesheet_82
+  - first:
+      213: -237077704873612396
+    second: naturewisp_spritesheet_83
+  - first:
+      213: -2295925775004597528
+    second: naturewisp_spritesheet_84
+  - first:
+      213: -1778121022321998498
+    second: naturewisp_spritesheet_85
+  - first:
+      213: -6929349304205158737
+    second: naturewisp_spritesheet_86
+  - first:
+      213: -277884001798629330
+    second: naturewisp_spritesheet_87
+  - first:
+      213: -2789554376385101677
+    second: naturewisp_spritesheet_88
+  - first:
+      213: -9156338228439156696
+    second: naturewisp_spritesheet_89
+  - first:
+      213: 8473913357100189089
+    second: naturewisp_spritesheet_90
+  - first:
+      213: 4214732097109854816
+    second: naturewisp_spritesheet_91
+  - first:
+      213: 538978237755674077
+    second: naturewisp_spritesheet_92
+  - first:
+      213: -8924170071345749403
+    second: naturewisp_spritesheet_93
+  - first:
+      213: -2018615131218131130
+    second: naturewisp_spritesheet_94
+  - first:
+      213: 8349568394641329993
+    second: naturewisp_spritesheet_95
+  - first:
+      213: 690098890998147724
+    second: naturewisp_spritesheet_96
+  - first:
+      213: -6870692329526956265
+    second: naturewisp_spritesheet_97
+  - first:
+      213: -2510627375506267546
+    second: naturewisp_spritesheet_98
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: naturewisp_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49c2ab5f550588c60800000000000000
+      internalID: 7820589083053927572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naturewisp_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 320
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88914b6f5cd32e1b0800000000000000
+      internalID: -5628868663802848888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naturewisp_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 320
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e8dcc639feee9e70800000000000000
+      internalID: 9123992649232865513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naturewisp_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 320
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c516fbe0f3ff1be40800000000000000
+      internalID: 5670594052131610972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naturewisp_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 320
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd721c49c214273b0800000000000000
+      internalID: -5516274933845383203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naturewisp_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 320
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c4a850e7c39cf750800000000000000
+      internalID: 6340104862102496450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naturewisp_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd0eba775ef7499f0800000000000000
+      internalID: -462604238180327201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naturewisp_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 240
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 692a945cd07107a10800000000000000
+      internalID: 1905047990289670806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naturewisp_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 240
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30b2bb7167128f000800000000000000
+      internalID: 69842585312242435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naturewisp_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 240
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66dc01ae6b7e2b800800000000000000
+      internalID: 626818070954954086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naturewisp_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 240
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc43d722ad2da6620800000000000000
+      internalID: 2768256755295925455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naturewisp_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 240
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84a326e4449165350800000000000000
+      internalID: 6005014934308665928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naturewisp_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 832358687de2fe5e0800000000000000
+      internalID: -1878231016380485064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naturewisp_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 160
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81bd7de26c70d4bc0800000000000000
+      internalID: -3797370363032642792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naturewisp_spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 160
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd2dc7bd7332631d0800000000000000
+      internalID: -3371468548227673379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naturewisp_spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 160
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c47577b490ce30690800000000000000
+      internalID: -7637001018425256116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naturewisp_spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 160
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ff41feefac72bda0800000000000000
+      internalID: -5930540664223608846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naturewisp_spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 160
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ce077ace911e7c40800000000000000
+      internalID: 5511862367647370945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naturewisp_spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5020d05ce270a8880800000000000000
+      internalID: -8608059840309427707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naturewisp_spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 80
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6079416d17e5ad30800000000000000
+      internalID: 4442210720843133035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naturewisp_spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 80
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0dba0984b178a9f0800000000000000
+      internalID: -456990341970871026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naturewisp_spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 80
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f68ead9de9d9b5630800000000000000
+      internalID: 3916897606514174063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naturewisp_spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 80
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feff38d8eb2babf30800000000000000
+      internalID: 4592179301545410543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naturewisp_spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 80
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4277d9f0bfda32520800000000000000
+      internalID: 2676173897398581028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naturewisp_spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 375fbd8b2ecc893f0800000000000000
+      internalID: -893739251896945293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naturewisp_spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1884572da90cfcd00800000000000000
+      internalID: 995225813860567169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naturewisp_spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3bf2de4ac146faa0800000000000000
+      internalID: -6127637905829332161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: fdcab7abea82d9d4ca9345930e18ab4f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      naturewisp_spritesheet_0: 7820589083053927572
+      naturewisp_spritesheet_1: -5628868663802848888
+      naturewisp_spritesheet_10: 2768256755295925455
+      naturewisp_spritesheet_11: 6005014934308665928
+      naturewisp_spritesheet_12: -1878231016380485064
+      naturewisp_spritesheet_13: -3797370363032642792
+      naturewisp_spritesheet_14: -3371468548227673379
+      naturewisp_spritesheet_15: -7637001018425256116
+      naturewisp_spritesheet_16: -5930540664223608846
+      naturewisp_spritesheet_17: 5511862367647370945
+      naturewisp_spritesheet_18: -8608059840309427707
+      naturewisp_spritesheet_19: 4442210720843133035
+      naturewisp_spritesheet_2: 9123992649232865513
+      naturewisp_spritesheet_20: -456990341970871026
+      naturewisp_spritesheet_21: 3916897606514174063
+      naturewisp_spritesheet_22: 4592179301545410543
+      naturewisp_spritesheet_23: 2676173897398581028
+      naturewisp_spritesheet_24: -893739251896945293
+      naturewisp_spritesheet_25: 995225813860567169
+      naturewisp_spritesheet_26: -6127637905829332161
+      naturewisp_spritesheet_3: 5670594052131610972
+      naturewisp_spritesheet_4: -5516274933845383203
+      naturewisp_spritesheet_5: 6340104862102496450
+      naturewisp_spritesheet_6: -462604238180327201
+      naturewisp_spritesheet_7: 1905047990289670806
+      naturewisp_spritesheet_8: 69842585312242435
+      naturewisp_spritesheet_9: 626818070954954086
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

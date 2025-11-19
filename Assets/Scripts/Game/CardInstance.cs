@@ -20,6 +20,7 @@ public class CardInstance : MonoBehaviour
     [SerializeField] protected TextMeshPro healthText;
     [SerializeField] private SpriteRenderer cardSprite;
     [SerializeField] private SpriteRenderer highlightSprite;
+    public Animator animator;
     public TroopsField troopsField;
 
     // New: track what container this card currently belongs to

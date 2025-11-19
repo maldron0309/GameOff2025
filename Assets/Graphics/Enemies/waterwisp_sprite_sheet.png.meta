@@ -1,0 +1,1030 @@
+fileFormatVersion: 2
+guid: ffed6a20974196d48b15f4654e329f28
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8754313767661129417
+    second: waterwisp_sprite_sheet_0
+  - first:
+      213: 8484157198453948495
+    second: waterwisp_sprite_sheet_1
+  - first:
+      213: 6774308721045230068
+    second: waterwisp_sprite_sheet_2
+  - first:
+      213: -5059953865444582337
+    second: waterwisp_sprite_sheet_3
+  - first:
+      213: 4023947961210495951
+    second: waterwisp_sprite_sheet_4
+  - first:
+      213: -3710979782066131315
+    second: waterwisp_sprite_sheet_5
+  - first:
+      213: -6911220159798831600
+    second: waterwisp_sprite_sheet_6
+  - first:
+      213: -8571186075857512869
+    second: waterwisp_sprite_sheet_7
+  - first:
+      213: -2858834898985338341
+    second: waterwisp_sprite_sheet_8
+  - first:
+      213: 1845054185022826837
+    second: waterwisp_sprite_sheet_9
+  - first:
+      213: -6307678501417800113
+    second: waterwisp_sprite_sheet_10
+  - first:
+      213: -2602391904221018702
+    second: waterwisp_sprite_sheet_11
+  - first:
+      213: 2656035368592041469
+    second: waterwisp_sprite_sheet_12
+  - first:
+      213: -8686563567676223825
+    second: waterwisp_sprite_sheet_13
+  - first:
+      213: 3982891304082014852
+    second: waterwisp_sprite_sheet_14
+  - first:
+      213: 1516201498951928462
+    second: waterwisp_sprite_sheet_15
+  - first:
+      213: -228123876041513811
+    second: waterwisp_sprite_sheet_16
+  - first:
+      213: -9113343841280659192
+    second: waterwisp_sprite_sheet_17
+  - first:
+      213: -5067687367807683449
+    second: waterwisp_sprite_sheet_18
+  - first:
+      213: 7798174836708445317
+    second: waterwisp_sprite_sheet_19
+  - first:
+      213: 1753325131932332565
+    second: waterwisp_sprite_sheet_20
+  - first:
+      213: -7634265058637975181
+    second: waterwisp_sprite_sheet_21
+  - first:
+      213: 4709058513682910476
+    second: waterwisp_sprite_sheet_22
+  - first:
+      213: 1727630350885890930
+    second: waterwisp_sprite_sheet_23
+  - first:
+      213: -8945923147415627410
+    second: waterwisp_sprite_sheet_24
+  - first:
+      213: 2876341911654945094
+    second: waterwisp_sprite_sheet_25
+  - first:
+      213: -7351676714643034980
+    second: waterwisp_sprite_sheet_26
+  - first:
+      213: -5845336078765268727
+    second: waterwisp_sprite_sheet_27
+  - first:
+      213: -445403238043970791
+    second: waterwisp_sprite_sheet_28
+  - first:
+      213: 1778027961158486826
+    second: waterwisp_sprite_sheet_29
+  - first:
+      213: -8155634952086747680
+    second: waterwisp_sprite_sheet_30
+  - first:
+      213: 3842330711633073233
+    second: waterwisp_sprite_sheet_31
+  - first:
+      213: -6026179264592138484
+    second: waterwisp_sprite_sheet_32
+  - first:
+      213: -5505452271119881800
+    second: waterwisp_sprite_sheet_33
+  - first:
+      213: 3072051923313006786
+    second: waterwisp_sprite_sheet_34
+  - first:
+      213: 295372675399995226
+    second: waterwisp_sprite_sheet_35
+  - first:
+      213: -8066487896934700884
+    second: waterwisp_sprite_sheet_36
+  - first:
+      213: 2559182934605506350
+    second: waterwisp_sprite_sheet_37
+  - first:
+      213: -364839360165374552
+    second: waterwisp_sprite_sheet_38
+  - first:
+      213: -683071015670735465
+    second: waterwisp_sprite_sheet_39
+  - first:
+      213: 116314829128285733
+    second: waterwisp_sprite_sheet_40
+  - first:
+      213: -6525198477006020131
+    second: waterwisp_sprite_sheet_41
+  - first:
+      213: -8573720678879387201
+    second: waterwisp_sprite_sheet_42
+  - first:
+      213: 9002969130268971020
+    second: waterwisp_sprite_sheet_43
+  - first:
+      213: 6061845438605588409
+    second: waterwisp_sprite_sheet_44
+  - first:
+      213: -5268997990992884042
+    second: waterwisp_sprite_sheet_45
+  - first:
+      213: 2180460731408303992
+    second: waterwisp_sprite_sheet_46
+  - first:
+      213: 5814758713651629974
+    second: waterwisp_sprite_sheet_47
+  - first:
+      213: -3718480305173848752
+    second: waterwisp_sprite_sheet_48
+  - first:
+      213: 2689263174844115787
+    second: waterwisp_sprite_sheet_49
+  - first:
+      213: -1436344948329986426
+    second: waterwisp_sprite_sheet_50
+  - first:
+      213: -1424297221612805595
+    second: waterwisp_sprite_sheet_51
+  - first:
+      213: -4189524326632070634
+    second: waterwisp_sprite_sheet_52
+  - first:
+      213: -4198743525962869624
+    second: waterwisp_sprite_sheet_53
+  - first:
+      213: 439694334534071959
+    second: waterwisp_sprite_sheet_54
+  - first:
+      213: -7000318188762438853
+    second: waterwisp_sprite_sheet_55
+  - first:
+      213: 2964555725454815514
+    second: waterwisp_sprite_sheet_56
+  - first:
+      213: -7161346229572390233
+    second: waterwisp_sprite_sheet_57
+  - first:
+      213: -3501151766846883042
+    second: waterwisp_sprite_sheet_58
+  - first:
+      213: 4922780060750844383
+    second: waterwisp_sprite_sheet_59
+  - first:
+      213: 8710778796694322779
+    second: waterwisp_sprite_sheet_60
+  - first:
+      213: 5272270864430514333
+    second: waterwisp_sprite_sheet_61
+  - first:
+      213: 4960517080605793271
+    second: waterwisp_sprite_sheet_62
+  - first:
+      213: 6708028586605063413
+    second: waterwisp_sprite_sheet_63
+  - first:
+      213: 109802299156674144
+    second: waterwisp_sprite_sheet_64
+  - first:
+      213: -2431504305658049742
+    second: waterwisp_sprite_sheet_65
+  - first:
+      213: -2912923672553588792
+    second: waterwisp_sprite_sheet_66
+  - first:
+      213: -7110292689989366475
+    second: waterwisp_sprite_sheet_67
+  - first:
+      213: 3422452090787076821
+    second: waterwisp_sprite_sheet_68
+  - first:
+      213: 223843894824431145
+    second: waterwisp_sprite_sheet_69
+  - first:
+      213: 731634567401239593
+    second: waterwisp_sprite_sheet_70
+  - first:
+      213: -6610825947632016658
+    second: waterwisp_sprite_sheet_71
+  - first:
+      213: -1666666374813569491
+    second: waterwisp_sprite_sheet_72
+  - first:
+      213: 8566494020311313317
+    second: waterwisp_sprite_sheet_73
+  - first:
+      213: 4952200143129379346
+    second: waterwisp_sprite_sheet_74
+  - first:
+      213: 6843081790702556844
+    second: waterwisp_sprite_sheet_75
+  - first:
+      213: 8112200411910456976
+    second: waterwisp_sprite_sheet_76
+  - first:
+      213: 7978199054289726115
+    second: waterwisp_sprite_sheet_77
+  - first:
+      213: 7907998355045304234
+    second: waterwisp_sprite_sheet_78
+  - first:
+      213: 5974801274739284940
+    second: waterwisp_sprite_sheet_79
+  - first:
+      213: -2993473645736859914
+    second: waterwisp_sprite_sheet_80
+  - first:
+      213: -7831439796379355632
+    second: waterwisp_sprite_sheet_81
+  - first:
+      213: 3017490856235261064
+    second: waterwisp_sprite_sheet_82
+  - first:
+      213: 5379077446803175909
+    second: waterwisp_sprite_sheet_83
+  - first:
+      213: 1560366740375083137
+    second: waterwisp_sprite_sheet_84
+  - first:
+      213: 1347905966451680188
+    second: waterwisp_sprite_sheet_85
+  - first:
+      213: 1760536921963757919
+    second: waterwisp_sprite_sheet_86
+  - first:
+      213: 7191157726148788659
+    second: waterwisp_sprite_sheet_87
+  - first:
+      213: -1876341793721926767
+    second: waterwisp_sprite_sheet_88
+  - first:
+      213: -4829545070362609173
+    second: waterwisp_sprite_sheet_89
+  - first:
+      213: 890771659418031322
+    second: waterwisp_sprite_sheet_90
+  - first:
+      213: 2492212960788964768
+    second: waterwisp_sprite_sheet_91
+  - first:
+      213: -2869216466075751742
+    second: waterwisp_sprite_sheet_92
+  - first:
+      213: 3316703899037266921
+    second: waterwisp_sprite_sheet_93
+  - first:
+      213: -5803030747876299116
+    second: waterwisp_sprite_sheet_94
+  - first:
+      213: 5829124969228346017
+    second: waterwisp_sprite_sheet_95
+  - first:
+      213: -5672009232626608014
+    second: waterwisp_sprite_sheet_96
+  - first:
+      213: -6753654511371492021
+    second: waterwisp_sprite_sheet_97
+  - first:
+      213: -3978871171718454627
+    second: waterwisp_sprite_sheet_98
+  - first:
+      213: -8796671293662620061
+    second: waterwisp_sprite_sheet_99
+  - first:
+      213: -2970650394152757156
+    second: waterwisp_sprite_sheet_100
+  - first:
+      213: -8270416307878865914
+    second: waterwisp_sprite_sheet_101
+  - first:
+      213: -6731046224995224392
+    second: waterwisp_sprite_sheet_102
+  - first:
+      213: 8447947459796089843
+    second: waterwisp_sprite_sheet_103
+  - first:
+      213: 4151034960313730877
+    second: waterwisp_sprite_sheet_104
+  - first:
+      213: -7309942896160871147
+    second: waterwisp_sprite_sheet_105
+  - first:
+      213: 2651260978215810448
+    second: waterwisp_sprite_sheet_106
+  - first:
+      213: -5515628052209545218
+    second: waterwisp_sprite_sheet_107
+  - first:
+      213: -2636066663395333470
+    second: waterwisp_sprite_sheet_108
+  - first:
+      213: 7908066271131175461
+    second: waterwisp_sprite_sheet_109
+  - first:
+      213: -4474475474060070338
+    second: waterwisp_sprite_sheet_110
+  - first:
+      213: -2162087392398690671
+    second: waterwisp_sprite_sheet_111
+  - first:
+      213: 1521288549759347592
+    second: waterwisp_sprite_sheet_112
+  - first:
+      213: -3346630933092183271
+    second: waterwisp_sprite_sheet_113
+  - first:
+      213: 3428988473961905132
+    second: waterwisp_sprite_sheet_114
+  - first:
+      213: -7800010648714967070
+    second: waterwisp_sprite_sheet_115
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: waterwisp_sprite_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cec0c54df19d7970800000000000000
+      internalID: 8754313767661129417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterwisp_sprite_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 320
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f40cb606508cdb570800000000000000
+      internalID: 8484157198453948495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterwisp_sprite_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 320
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f15bb4d3ed230e50800000000000000
+      internalID: 6774308721045230068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterwisp_sprite_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 320
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3c9f46a4ce67c9b0800000000000000
+      internalID: -5059953865444582337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterwisp_sprite_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 320
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc3eb96d95fe7d730800000000000000
+      internalID: 4023947961210495951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterwisp_sprite_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8eaa41cc83ff7cc0800000000000000
+      internalID: -3710979782066131315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterwisp_sprite_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 240
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0161ca2c1e96610a0800000000000000
+      internalID: -6911220159798831600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterwisp_sprite_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 240
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b561db41da70d0980800000000000000
+      internalID: -8571186075857512869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterwisp_sprite_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 240
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1a3d7e5ec06358d0800000000000000
+      internalID: -2858834898985338341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterwisp_sprite_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 240
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55922a97103fa9910800000000000000
+      internalID: 1845054185022826837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterwisp_sprite_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4eaf9d82df9678a0800000000000000
+      internalID: -6307678501417800113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterwisp_sprite_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 160
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b5cd86e95272ebd0800000000000000
+      internalID: -2602391904221018702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterwisp_sprite_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 160
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df56dcf68122cd420800000000000000
+      internalID: 2656035368592041469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterwisp_sprite_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 160
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fae0fc56570237780800000000000000
+      internalID: -8686563567676223825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterwisp_sprite_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 160
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4820dcee982164730800000000000000
+      internalID: 3982891304082014852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterwisp_sprite_sheet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8ac1f8ea31aa0510800000000000000
+      internalID: 1516201498951928462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterwisp_sprite_sheet_16
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 80
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da4a2cb1b8a85dcf0800000000000000
+      internalID: -228123876041513811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterwisp_sprite_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 80
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 801f8789f06e68180800000000000000
+      internalID: -9113343841280659192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterwisp_sprite_sheet_18
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 80
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 784b6115035fba9b0800000000000000
+      internalID: -5067687367807683449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterwisp_sprite_sheet_19
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 80
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58c856e82bea83c60800000000000000
+      internalID: 7798174836708445317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterwisp_sprite_sheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51277900bef055810800000000000000
+      internalID: 1753325131932332565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterwisp_sprite_sheet_21
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 371f4b29064ad0690800000000000000
+      internalID: -7634265058637975181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterwisp_sprite_sheet_22
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0d499eb4cfe95140800000000000000
+      internalID: 4709058513682910476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterwisp_sprite_sheet_23
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 60
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27bacb796a6c9f710800000000000000
+      internalID: 1727630350885890930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 02bda17c61539af45972fe420ec34b7b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      waterwisp_sprite_sheet_0: 8754313767661129417
+      waterwisp_sprite_sheet_1: 8484157198453948495
+      waterwisp_sprite_sheet_10: -6307678501417800113
+      waterwisp_sprite_sheet_11: -2602391904221018702
+      waterwisp_sprite_sheet_12: 2656035368592041469
+      waterwisp_sprite_sheet_13: -8686563567676223825
+      waterwisp_sprite_sheet_14: 3982891304082014852
+      waterwisp_sprite_sheet_15: 1516201498951928462
+      waterwisp_sprite_sheet_16: -228123876041513811
+      waterwisp_sprite_sheet_17: -9113343841280659192
+      waterwisp_sprite_sheet_18: -5067687367807683449
+      waterwisp_sprite_sheet_19: 7798174836708445317
+      waterwisp_sprite_sheet_2: 6774308721045230068
+      waterwisp_sprite_sheet_20: 1753325131932332565
+      waterwisp_sprite_sheet_21: -7634265058637975181
+      waterwisp_sprite_sheet_22: 4709058513682910476
+      waterwisp_sprite_sheet_23: 1727630350885890930
+      waterwisp_sprite_sheet_3: -5059953865444582337
+      waterwisp_sprite_sheet_4: 4023947961210495951
+      waterwisp_sprite_sheet_5: -3710979782066131315
+      waterwisp_sprite_sheet_6: -6911220159798831600
+      waterwisp_sprite_sheet_7: -8571186075857512869
+      waterwisp_sprite_sheet_8: -2858834898985338341
+      waterwisp_sprite_sheet_9: 1845054185022826837
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

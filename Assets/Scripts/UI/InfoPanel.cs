@@ -8,6 +8,7 @@ public class InfoPanel : MonoBehaviour
     public static InfoPanel instance;
     [Header("UI Components")]
     [SerializeField] private TextMeshProUGUI infoText;
+    [SerializeField] private TextMeshProUGUI waveCounter;
     [SerializeField] private CanvasGroup canvasGroup;
 
     [Header("Settings")]
@@ -39,6 +40,10 @@ public class InfoPanel : MonoBehaviour
         if (fadeRoutine != null)
             StopCoroutine(fadeRoutine);
         fadeRoutine = StartCoroutine(FadeOut());
+    }
+    public void UpdateWavesCount(int current, int last)
+    {
+        waveCounter.text = $"waves: {current}/{last}";
     }
 
     private IEnumerator FadeIn(string message, float duration)

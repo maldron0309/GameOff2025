@@ -265,7 +265,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectName: Burning
   description: Burn damage
-  effectPrefab: {fileID: 0}
+  effectPrefab: {fileID: 6709276644064086281, guid: 439f64f9a70c20242b9a36f8ade449d4, type: 3}
   duration: 3
   damagePerTurn: 4
 --- !u!1 &1468682435076087105
@@ -483,7 +483,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectName: Poison
   description: 
-  effectPrefab: {fileID: 0}
+  effectPrefab: {fileID: 6709276644064086281, guid: 754cbd3cdf8c73348a028ce7b24d3d52, type: 3}
   duration: 5
   damagePerTurn: 2
 --- !u!1 &1908265978430398510
@@ -563,7 +563,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectName: Burning
   description: 
-  effectPrefab: {fileID: 0}
+  effectPrefab: {fileID: 6709276644064086281, guid: 439f64f9a70c20242b9a36f8ade449d4, type: 3}
   duration: 3
   damagePerTurn: 4
 --- !u!1 &2821639713627991288
@@ -776,7 +776,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectName: Burning
   description: 
-  effectPrefab: {fileID: 0}
+  effectPrefab: {fileID: 6709276644064086281, guid: 439f64f9a70c20242b9a36f8ade449d4, type: 3}
   duration: 3
   damagePerTurn: 4
 --- !u!1 &3330150070652840376
@@ -856,7 +856,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectName: Burning
   description: 
-  effectPrefab: {fileID: 0}
+  effectPrefab: {fileID: 6709276644064086281, guid: 439f64f9a70c20242b9a36f8ade449d4, type: 3}
   duration: 3
   damagePerTurn: 8
 --- !u!1 &3868967560574743431
@@ -1137,7 +1137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectName: Poison
   description: 
-  effectPrefab: {fileID: 0}
+  effectPrefab: {fileID: 6709276644064086281, guid: 754cbd3cdf8c73348a028ce7b24d3d52, type: 3}
   duration: 5
   damagePerTurn: 2
 --- !u!1 &6018644917136374836
@@ -1626,7 +1626,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectName: Regeneration
   description: Regenerate health each turn
-  effectPrefab: {fileID: 0}
+  effectPrefab: {fileID: 6709276644064086281, guid: 7206cf20b2462d44f994e7cb77128949, type: 3}
   duration: 3
   regenAmount: 5
 --- !u!1 &8739283652470979721

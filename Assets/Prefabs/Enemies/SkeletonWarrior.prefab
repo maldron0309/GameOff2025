@@ -593,12 +593,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentAttack: 5
-  maxHealth: 15
+  maxHealth: 18
   state: 0
   attackText: {fileID: 6513506504482716756}
   healthText: {fileID: 1140594244276213103}
   cardSprite: {fileID: 8469931686135480976}
   highlightSprite: {fileID: 9070761382798154575}
+  animator: {fileID: 0}
   troopsField: {fileID: 0}
   currentContainer: {fileID: 0}
   activeEffects: []
@@ -811,7 +812,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 0
   m_Sprite: {fileID: -1011880802010920795, guid: 1ff83a306f8f47f4692d49eafe1914dc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

@@ -6,6 +6,7 @@ public class HeroInstance : CardInstance
 {
     public ElementType mainElement;
     public int spellPower = 100;
+    public bool isDefeated = false;
     public override void Initialize()
     {
         base.Initialize();
@@ -65,8 +66,11 @@ public class HeroInstance : CardInstance
             field.RemoveCard(this);
         }
         PlayerHand.instance.RemoveCardsOfType(mainElement);
+        GameManager.Instance.RemoveElementFromDeck(mainElement);
 
-        Destroy(gameObject);
+        //Destroy(gameObject);
+        isDefeated = true;
+        animator.Play("DefeatFall");
         GameManager.Instance.SetPlayerInput(true);
     }
 }
