@@ -11,6 +11,7 @@ public class UIHeroSelectionSlot : MonoBehaviour
     [SerializeField] protected string heroName;
     [SerializeField] protected Image iconImage;
     [SerializeField] protected string descriptionText;
+    [SerializeField] protected GameObject heroPrefab;
     protected bool isSelected = false;
     private Button heroButton;
     protected virtual void Awake()
@@ -21,7 +22,7 @@ public class UIHeroSelectionSlot : MonoBehaviour
     public virtual void ClickHeroSelection()
     {
 
-        HeroInfoModel heroInfo = new HeroInfoModel(heroName, iconImage, descriptionText);
+        HeroInfoModel heroInfo = new HeroInfoModel(heroName, iconImage, descriptionText, heroPrefab);
         if (isSelected) heroInfo.Recruit();
         else heroInfo.Dismiss();
         OnHeroSelected?.Invoke(heroInfo);

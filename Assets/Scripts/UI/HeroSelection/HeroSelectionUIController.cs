@@ -10,11 +10,15 @@ public class HeroSelectionUIController : MonoBehaviour
     private HeroInfoModel heroSelectedNow;
     [Header("Hero Info UI Elements")]
     public TextMeshProUGUI nameText;
-    public Image iconImage;
+    public Image heroIcon;
     public TextMeshProUGUI descriptionText;
     public Button recruitButton;
     public Button dismisButton;
+    public Button startButton;
     public List<UIHeroSelectedSlot> heroSelectedSlots;
+
+
+    public HeroSelectionData heroSelectionData;
     void OnEnable()
     {
         UIHeroSelectionSlot.OnHeroSelected += SelectHero;
@@ -27,7 +31,7 @@ public class HeroSelectionUIController : MonoBehaviour
     private void SelectHero(HeroInfoModel heroModel)
     {
         nameText.text = heroModel.heroName;
-        iconImage.color = heroModel.heroIcon.color; //Change after
+        heroIcon.sprite = heroModel.heroIcon.sprite;
         descriptionText.text = heroModel.heroDescription;
         if (heroModel.isRecruited)
         {
@@ -71,6 +75,10 @@ public class HeroSelectionUIController : MonoBehaviour
                 }
             }
         }
+        if (heroesSelected.Count == 3)
+        {
+            startButton.gameObject.SetActive(true);
+        }
     }
 
     public void DismissHero()
@@ -90,6 +98,22 @@ public class HeroSelectionUIController : MonoBehaviour
             recruitButton.gameObject.SetActive(true);
             dismisButton.gameObject.SetActive(false);
         }
+        if (heroesSelected.Count < 3)
+        {
+            startButton.gameObject.SetActive(false);
+        }
+    }
+
+    public void SaveHero()
+    {
+
+        GameObject[] heroesData = new GameObject[this.heroSelectedSlots.Count];
+
+        for (int i = 0; i < this.heroSelectedSlots.Count; i++)
+        {
+            heroesData[i] = this.heroSelectedSlots[i].GetHeroPrefab();
+        }
+        heroSelectionData.SaveHeroes(heroesData);
     }
 
 }
