@@ -592,13 +592,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a25eb024d530251498f3b3be151a9474, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentAttack: 5
+  attackPower: 100
   maxHealth: 15
   state: 0
   attackText: {fileID: 6513506504482716756}
   healthText: {fileID: 1140594244276213103}
   cardSprite: {fileID: 8469931686135480976}
   highlightSprite: {fileID: 9070761382798154575}
+  animator: {fileID: 0}
   troopsField: {fileID: 0}
   currentContainer: {fileID: 0}
   activeEffects: []

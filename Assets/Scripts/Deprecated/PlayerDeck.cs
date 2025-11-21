@@ -33,47 +33,4 @@ public class PlayerDeck : MonoBehaviour
         playerHand = ownerHand;
         Shuffle();
     }
-
-    public void Draw()
-    {
-        if (cards.Count == 0)
-        {
-            Debug.LogWarning("Deck is empty!");
-            return;
-        }
-
-        if (cardPrefab == null)
-        {
-            Debug.LogError("Card Prefab not assigned to PlayerDeck!");
-            return;
-        }
-
-        Card cardToDraw = cards[0];
-        cards.RemoveAt(0);
-
-        // Instantiate the prefab and set card data
-        GameObject newCardObj = Instantiate(cardPrefab);
-        newCardObj.transform.position = transform.position;
-        CardInstance cardInstance = newCardObj.GetComponent<CardInstance>();
-
-        if (cardInstance == null)
-        {
-            Debug.LogError("Card prefab missing CardInstance component!");
-            return;
-        }
-
-        cardInstance.SetCardData(cardToDraw);
-        cardInstance.ChangeState(CardState.InHand);
-
-        //// Add to player hand
-        //if (playerHand != null)
-        //{
-        //    playerHand.AddCard(cardInstance);
-        //    cardInstance.currentContainer = playerHand;
-        //}
-        //else
-        //{
-        //    Debug.LogError("PlayerHand not assigned to PlayerDeck!");
-        //}
-    }
 }

@@ -10,7 +10,7 @@ public class CardInstance : MonoBehaviour
 
     [Header("Card Data")]
     //public Card baseCard;
-    public int currentAttack;
+    public int attackPower = 100;
     private int currentHealth;
     public int maxHealth;
     public CardState state;
@@ -50,15 +50,6 @@ public class CardInstance : MonoBehaviour
         if (highlightSprite != null)
             highlightSprite.enabled = false;
     }
-
-    public void SetCardData(Card cardData)
-    {
-        //baseCard = cardData;
-        currentAttack = cardData.attack;
-        currentHealth = cardData.health;
-        UpdateVisuals();
-    }
-
     public void ChangeState(CardState newState)
     {
         state = newState;
@@ -113,7 +104,6 @@ public class CardInstance : MonoBehaviour
     }
     public virtual void UpdateVisuals()
     {
-        if (attackText != null) attackText.text = currentAttack.ToString();
         if (healthText != null) healthText.text = currentHealth.ToString();
 
         // I think I'll reomve baseCard. Right sprite will come from prefab of the object
@@ -133,18 +123,6 @@ public class CardInstance : MonoBehaviour
 
     private void ToggleSelection()
     {
-        //if (highlightSprite != null)
-        //{
-        //    if (isSelected)
-        //    {
-        //        highlightSprite.color = new Color(0f, 1f, 0f, 0.5f);
-        //        highlightSprite.enabled = true;
-        //    }
-        //    else
-        //    {
-        //        highlightSprite.enabled = false;
-        //    }
-        //}
     }
     public virtual void SelectAsAttacker()
     {
@@ -170,32 +148,6 @@ public class CardInstance : MonoBehaviour
             highlightSprite.color = active ? new Color(0f, 1f, 0f, 0.5f) : Color.clear;
             highlightSprite.enabled = active;
         }
-    }
-    public IEnumerator PerformAttack(CardInstance target)
-    {
-        if (target == null || target.state == CardState.Destroyed) yield break;
-
-        GameManager.Instance.SetPlayerInput(false);
-        ToggleHighlight(false);
-        selectedAttacker = null;
-        GameManager.Instance.SelectHero(null);
-        HasActedThisTurn = true;
-
-        originalPosition = transform.position;
-
-        // Move toward target (0.25s)
-        yield return MoveToPosition(target.transform.position, 0.25f);
-        int accuracy = 100;
-        LowerAccuracyStatus accStatus = GetComponent<LowerAccuracyStatus>();
-        if (accStatus != null)
-            accuracy -= accStatus.accuracyPenalty;
-        // Deal damage
-        target.TakeDamage(currentAttack, ElementType.Physical, accuracy);
-
-        // Return (0.25s)
-        yield return MoveToPosition(originalPosition, 0.25f);
-
-        GameManager.Instance.SetPlayerInput(true);
     }
 
     public int TakeDamage(int dmg, ElementType element, int accuracy = 100)

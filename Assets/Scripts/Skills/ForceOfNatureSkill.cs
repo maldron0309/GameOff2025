@@ -8,11 +8,16 @@ public class ForceOfNatureSkill : BaseSkill
     [Header("Skill Visuals")]
     public GameObject formedProjectilePrefab;   // projectile created at each poisoned enemy
     public GameObject explosionPrefab;          // final explosion at midpoint
+    public PoisonEffect poisonEffect;
 
     [Header("Projectile Motion")]
     public float projectileSpeed = 6f;
     public float explosionDuration = 0.7f;
     public int baseDamage;
+    public ElementIconLibrary elementsLib;
+    public float elementalRiseHeight = 4.0f;
+    public float elementalLaunchDuration = 0.8f;
+    public float mergeDelay = 0.5f;
 
     public override void Execute()
     {
@@ -22,7 +27,7 @@ public class ForceOfNatureSkill : BaseSkill
     public override string UpdatedDescription()
     {
         HeroInstance hero = GameManager.Instance.GetHeroOfelement(ElementType.Nature);
-        return description.Replace("<damage>", Mathf.RoundToInt(baseDamage * (hero.spellPower / 100f)).ToString());
+        return description.Replace("<damage>", Mathf.RoundToInt(baseDamage * (hero.spellPower / 100f)).ToString()).Replace("<poison>", Mathf.RoundToInt(poisonEffect.damagePerTurn * (hero.spellPower / 100f)).ToString());
     }
 
     private IEnumerator DoForceOfNature()
@@ -35,6 +40,16 @@ public class ForceOfNatureSkill : BaseSkill
         List<PoisonEffect> poisonEffects = new List<PoisonEffect>();
         List<int> poisonDamageValues = new List<int>();
         HeroInstance hero = GameManager.Instance.GetHeroOfelement(ElementType.Nature);
+
+        yield return GameManager.Instance.StartCoroutine(
+            PerformElementalLaunches(
+                elementsLib,
+                requiredElements,
+                elementalRiseHeight,
+                elementalLaunchDuration,
+                mergeDelay
+            )
+        );
 
         foreach (var enemy in enemyUnits)
         {
@@ -52,6 +67,12 @@ public class ForceOfNatureSkill : BaseSkill
                 int damage = poison.duration * Mathf.RoundToInt(Mathf.RoundToInt(baseDamage * (hero.spellPower / 100f)));
                 poisonDamageValues.Add(damage);
             }
+            else
+            {
+                enemy.TakeDamage(Mathf.RoundToInt(Mathf.RoundToInt(poisonEffect.damagePerTurn * (hero.spellPower / 100f))), ElementType.Nature);
+            }
+
+            enemy.AddStatusEffect(poisonEffect, hero.spellPower);
         }
 
         if (poisonedEnemies.Count == 0)

@@ -11,5 +11,6 @@ public abstract class BaseMonsterSkill : MonoBehaviour
 
     public abstract IEnumerator Execute(CardInstance target);
 
+    protected CardInstance cardInstance;
 
 }

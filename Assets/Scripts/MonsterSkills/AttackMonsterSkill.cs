@@ -6,9 +6,6 @@ public class AttackMonsterSkill : BaseMonsterSkill
 {
     public int damage;
     public bool isProjectileAttack;
-    
-    private CardInstance cardInstance;
-
 
     public override IEnumerator Execute(CardInstance target)
     {
@@ -43,7 +40,7 @@ public class AttackMonsterSkill : BaseMonsterSkill
         if (accStatus != null)
             accuracy -= accStatus.accuracyPenalty;
         // Deal damage
-        target.TakeDamage(damage, ElementType.Fire, accuracy);
+        target.TakeDamage(Mathf.RoundToInt(damage * cardInstance.attackPower * 0.01f), ElementType.Fire, accuracy);
 
         // Return (0.25s)
         yield return MoveToPosition(originalPosition, 0.25f);

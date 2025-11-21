@@ -4,8 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using GameOff2025.Assets.Scripts.UI.HeroSelection;
 using System.Linq;
-using UnityEditor.SearchService;
-using UnityEngine.SceneManagement;
 public class HeroSelectionUIController : MonoBehaviour
 {
     private List<HeroInfoModel> heroesSelected = new List<HeroInfoModel>();
